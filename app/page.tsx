@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import Logo from './components/Logo/Logo';
 
 export default function Home() {
   return (
     <main>
-      <h1 className="font-cardo text-5xl underline">Game of Thrones</h1>
+      <Logo />
     </main>
   );
 }
