@@ -7,7 +7,13 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        cardo: ['var(--font-cardo)'],
+        mono: ['var(--font-karla)'],
+        tulpen: ['var(--font-tulpen)'],
+      },
+    },
   },
   plugins: [],
 };

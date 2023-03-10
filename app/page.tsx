@@ -1,14 +1,9 @@
 import Image from 'next/image';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
     <main>
-      <h1 className="text-5xl font-bold underline md:bg-slate-800">
-        Game of Thrones
-      </h1>
+      <h1 className="font-cardo text-5xl underline">Game of Thrones</h1>
     </main>
   );
 }
