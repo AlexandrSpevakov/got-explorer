@@ -4,7 +4,7 @@ import bg1 from '../../public/hero-bg1.jpg';
 
 export default function Hero() {
   return (
-    <section>
+    <section className="relative h-screen w-screen">
       <div
         className="absolute top-0 left-0 z-0 h-screen w-screen bg-cover bg-center bg-no-repeat opacity-50"
         style={{
@@ -17,7 +17,7 @@ export default function Hero() {
 
       <a
         href="#home"
-        className="absolute top-8/10 right-1/2 z-10 translate-x-1/2 text-center text-8xl duration-300 hover:text-orange-600"
+        className="absolute top-8.5/10 right-1/2 z-10 translate-x-1/2 text-center text-7xl duration-300 hover:text-orange-600"
       >
         <TbArrowDownRhombus />
       </a>
