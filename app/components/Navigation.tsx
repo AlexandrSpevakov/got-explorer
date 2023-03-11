@@ -8,7 +8,7 @@ export default function Navigation() {
 
   return (
     <nav>
-      <ul className="flex gap-x-8 text-2xl text-white">
+      <ul className="flex gap-x-8 text-2xl">
         <li>
           <Link
             href="/"

@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="en"
       className={`${cardo.variable} ${karla.variable} ${tulpenOne.variable}`}
     >
-      <body className="bg-stone-900">{children}</body>
+      <body className="bg-stone-900 text-white">{children}</body>
     </html>
   );
 }
