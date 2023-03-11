@@ -1,6 +1,8 @@
 import './globals.css';
 import { Cardo, Karla, Tulpen_One } from 'next/font/google';
 
+import Header from './components/Header';
+
 const cardo = Cardo({
   weight: ['400', '700'],
   variable: '--font-cardo',
@@ -30,7 +32,10 @@ export default function RootLayout({
       lang="en"
       className={`${cardo.variable} ${karla.variable} ${tulpenOne.variable}`}
     >
-      <body className="bg-stone-900 text-white">{children}</body>
+      <body className="bg-stone-900 text-white">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
