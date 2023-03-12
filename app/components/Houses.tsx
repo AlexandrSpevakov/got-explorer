@@ -11,7 +11,7 @@ export default function Houses() {
         <h2 className="pt-32 text-center font-cardo text-[84px] 2xl:text-8xl">
           The Noble Houses of Westeros
         </h2>
-        <section className="mt-16">
+        <section className="mt-0 2xl:mt-12">
           <Image
             src={map2}
             alt="map"
@@ -25,37 +25,37 @@ export default function Houses() {
             Stark, which rules over an independent kingdom.
           </p>{' '}
           <p className="mt-8 text-3xl">
-            Before the Targaryen Conquest, each of the Seven Kingdoms was ruled
-            independently by a powerful royal family. During the Conquest these
-            families were either destroyed, replaced, or defeated and made to
-            swear allegiance to King Aegon, who reigned from the Iron Throne in
-            King&apos;s Landing.
+            The Great Houses are often distinguished by their sigils, words, and
+            notable members. House Stark, for example, is known for its direwolf
+            sigil and the words &quot;Winter is Coming.&quot; House Lannister,
+            on the other hand, is recognized by its golden lion sigil and the
+            words &quot;Hear Me Roar!&quot; House Targaryen, the family of the
+            former ruling dynasty, is identified by its three-headed dragon
+            sigil and the words &quot;Fire and Blood.&quot;
           </p>
           <p className="mt-8 text-2xl">
-            The War of the Five Kings, along with Daenerys Targaryen&apos;s war
-            for Westeros, has seen changes amongst the Great Houses. House
-            Baratheon is no longer the royal house, and two of it&apos;s
-            branches have become extinct, House Tyrell is also extinct, and has
-            been succeeded by Bronn&apos;s unnamed house. The Riverlands and the
-            titles of House Tully, which is also near extinction, defeated in
-            the war and exiled, have been given to its usurping former vassals
-            House Frey, though the other Tully vassals remain opposed to the
-            Freys, whose male line has, meanwhile, been effectively wiped out,
-            allowing the Tullys to reclaim their position
+            Each Great House also has its own distinct history and legacy. House
+            Baratheon, for instance, rose to power after the Targaryen Conquest
+            when Aegon&quot;s half-brother Orys Baratheon became his closest
+            ally and friend. The house&quot;s most famous member, Robert
+            Baratheon, was responsible for leading a rebellion against the
+            Targaryens and becoming the first non-Targaryen king to sit on the
+            Iron Throne in centuries.
           </p>{' '}
           <p className="mt-4 text-2xl">
-            With the coronation of Queen Cersei Lannister, the Crownlands was
-            held by House Lannister, the new royal house after the legal
-            extinction of the Baratheons (though after the legitimization of
-            Gendry Baratheon by Queen Daenerys Targaryen, House Baratheon has
-            been restored). Although scattered early in the war and stripped of
-            lands and titles, House Stark has regained control of the North
-            through the defeat of its usurping vassals House Bolton, and later
-            gained independence. After the battle of King&apos;s Landing, the
-            Lannisters&apos; brief reign as Royal House ended, and once again,
-            they only rule the Westerlands. However, the Lannisters face an
-            uncertain future, with all but one of them dead, and their gold
-            mines depleted.
+            While the Great Houses hold immense power, they are not invincible.
+            Throughout the history of the Seven Kingdoms, various houses have
+            risen and fallen, either through war, political intrigue, or other
+            means. House Tully, for example, once a powerful and wealthy house,
+            lost much of its influence after the Red Wedding, a devastating
+            massacre orchestrated by House Frey and House Bolton.
+          </p>{' '}
+          <p className="mt-4 text-2xl">
+            As the story of the Seven Kingdoms continues to unfold, the fates of
+            the Great Houses remain uncertain. New alliances will be formed, old
+            enemies will be resurrected, and the balance of power will
+            constantly shift as each house struggles to maintain its position of
+            authority and influence.
           </p>
         </section>
       </section>
