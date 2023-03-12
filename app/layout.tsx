@@ -2,6 +2,7 @@ import './globals.css';
 import { Cardo, Karla, Tulpen_One } from 'next/font/google';
 
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 const cardo = Cardo({
   weight: ['400', '700'],
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className="bg-neutral-900 text-white">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
