@@ -47,7 +47,6 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <span className="block pb-5 text-center">2023 Spievakov &#169;</span>
     </footer>
   );
 }
