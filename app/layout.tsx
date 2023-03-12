@@ -30,9 +30,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cardo.variable} ${karla.variable} ${tulpenOne.variable}`}
+      className={`${cardo.variable} ${karla.variable} ${tulpenOne.variable} scroll-smooth`}
     >
-      <body className="bg-stone-900 text-white">
+      <body className="bg-neutral-900 text-white">
         <Header />
         {children}
       </body>
