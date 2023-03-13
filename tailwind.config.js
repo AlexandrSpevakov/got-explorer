@@ -22,6 +22,9 @@ module.exports = {
         15: '.15',
         8: '.08',
       },
+      outlineWidth: {
+        3: '3px',
+      },
     },
   },
   plugins: [],
