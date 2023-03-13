@@ -4,8 +4,9 @@ import { useState } from 'react';
 
 import HousesGrid from './HousesGrid';
 import Search from './Search';
+import { House } from '@/app/types/House';
 
-export default function MainContent({ houses }: { houses: any }) {
+export default function MainContent({ houses }: { houses: House[] }) {
   const [searchValue, setSearchValue] = useState<string>('');
 
   return (

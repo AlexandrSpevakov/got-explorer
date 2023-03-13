@@ -1,14 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { House } from '@/app/types/House';
+
 export default function HousesGrid({
   houses,
   searchValue,
 }: {
-  houses: any;
+  houses: House[];
   searchValue: string;
 }) {
-  const filteredHouses = houses.filter((house: any) =>
+  const filteredHouses = houses.filter((house: House) =>
     `house ${house.name.toLowerCase()}`.includes(
       searchValue.trim().toLowerCase(),
     ),
@@ -23,7 +25,7 @@ export default function HousesGrid({
       }
     >
       {filteredHouses.length >= 1 ? (
-        filteredHouses.map((house: any) => (
+        filteredHouses.map((house: House) => (
           <div key={house.id} className="w-full rounded-md bg-black p-10">
             <Image
               src={`/../public/houses/${house.name}.webp`}
@@ -56,7 +58,7 @@ export default function HousesGrid({
           </div>
         ))
       ) : (
-        <h3 className="text-5xl text-center my-60">
+        <h3 className="my-60 text-center text-5xl">
           No houses with that name were found...
         </h3>
       )}
