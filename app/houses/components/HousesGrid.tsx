@@ -38,12 +38,14 @@ export default function HousesGrid({
             <h3 className="block pb-4 text-center text-2xl">
               House {house.name}
             </h3>
-            <span className="block border-t-4 border-stone-600 py-4 text-xl">
-              Seat:&nbsp;&nbsp;{house.seat}
-            </span>
-            <span className="block border-y-4 border-stone-600 py-4 text-xl">
-              Region:&nbsp;&nbsp;{house.region}
-            </span>
+            <div className="flex border-t-4 border-stone-600 py-4 text-xl">
+              <span className="mr-5 text-stone-400">Seat:</span>
+              <span className="">{house.seat}</span>
+            </div>
+            <div className="flex border-y-4 border-stone-600 py-4 text-xl">
+              <span className="mr-5 text-stone-400">Region:</span>
+              <span className="">{house.region}</span>
+            </div>
             <div className="flex h-24 items-center justify-center border-b-4 border-stone-600 py-2">
               <span className="text-center text-xl">
                 &quot;{house.words}&quot;
