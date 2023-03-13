@@ -53,7 +53,7 @@ export default function HousesGrid({
             </div>
             <Link
               href={`/houses/${house.name}`}
-              className="mx-auto mt-10 block w-fit rounded-md bg-stone-600 py-2 px-3 text-xl duration-300 hover:bg-orange-600"
+              className="mx-auto mt-10 block w-fit rounded-md bg-zinc-700 py-2 px-4 text-xl duration-300 hover:bg-orange-600"
             >
               Read More
             </Link>
