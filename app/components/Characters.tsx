@@ -58,7 +58,7 @@ export default function Characters() {
         className="group relative mt-28 flex h-96 w-screen items-center justify-center bg-black 2xl:mt-44"
       >
         <div
-          className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-25 duration-500 group-hover:opacity-15"
+          className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-15 duration-700 group-hover:opacity-10"
           style={{
             backgroundImage: `url(${bg.src})`,
           }}

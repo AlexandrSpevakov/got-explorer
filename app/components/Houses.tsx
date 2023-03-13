@@ -64,7 +64,7 @@ export default function Houses() {
         className="group relative mt-28 flex h-96 w-screen items-center justify-center bg-black 2xl:mt-44"
       >
         <div
-          className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-15 duration-500 group-hover:opacity-8"
+          className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-10 duration-700 group-hover:opacity-7"
           style={{
             backgroundImage: `url(${bg5.src})`,
           }}

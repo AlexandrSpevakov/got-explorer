@@ -50,7 +50,7 @@ export default function Dragons() {
         className="group relative mt-28 flex h-96 w-screen items-center justify-center bg-black 2xl:mt-44"
       >
         <div
-          className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-35 duration-500 group-hover:opacity-20"
+          className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-30 duration-700 group-hover:opacity-15"
           style={{
             backgroundImage: `url(${bg.src})`,
           }}
