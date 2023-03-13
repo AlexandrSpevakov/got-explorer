@@ -30,8 +30,8 @@ export default function HousesGrid({
             <Image
               src={`/../public/houses/${house.name}.webp`}
               alt={house.name}
-              width={150}
-              height={160}
+              width={160}
+              height={176}
               className="m-auto mb-10 h-44 w-auto"
             />
 
