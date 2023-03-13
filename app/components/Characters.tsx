@@ -14,7 +14,7 @@ export default function Characters() {
         <section className="mt-0 2xl:mt-12">
           <Image
             src={nedStark}
-            alt="map"
+            alt="Ned Stark"
             className="float-right ml-5 w-4/12 rounded-md 2xl:w-2/12"
           />
           <p className="mt-8 text-3xl">

@@ -14,7 +14,7 @@ export default function Dragons() {
         <section className="mt-0 2xl:mt-12">
           <Image
             src={dragon}
-            alt="map"
+            alt="dragon"
             className="float-right ml-5 w-4/12 rounded-md 2xl:w-2/12"
           />
           <p className="mt-8 text-3xl">
@@ -46,7 +46,7 @@ export default function Dragons() {
         </section>
       </section>
       <Link
-        href="/characters"
+        href="/dragons"
         className="group relative mt-28 flex h-96 w-screen items-center justify-center bg-black 2xl:mt-44"
       >
         <div
