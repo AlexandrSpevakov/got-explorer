@@ -1,4 +1,4 @@
-import bg2 from '../../public/houses/housesbg2.jpg';
+import heroBg from '../../public/houses/hero-bg.webp';
 import MainContent from './components/MainContent';
 
 async function getHouses() {
@@ -17,7 +17,7 @@ export default async function Houses() {
         <div
           className="absolute top-0 left-0 z-[-1] h-screen w-screen bg-cover bg-center bg-no-repeat opacity-5"
           style={{
-            backgroundImage: `url(${bg2.src})`,
+            backgroundImage: `url(${heroBg.src})`,
           }}
         />
         <h2 className="pt-40 text-center font-cardo text-9xl">Houses</h2>
