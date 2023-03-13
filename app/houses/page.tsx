@@ -1,5 +1,5 @@
 import bg2 from '../../public/houses/housesbg2.jpg';
-import HousesGrid from './components/HousesGrid';
+import MainContent from './components/MainContent';
 
 async function getHouses() {
   const houses = await fetch(
@@ -21,7 +21,7 @@ export default async function Houses() {
           }}
         />
         <h2 className="pt-40 text-center font-cardo text-9xl">Houses</h2>
-        <HousesGrid houses={houses} />
+        <MainContent houses={houses} />
       </section>
     </main>
   );
