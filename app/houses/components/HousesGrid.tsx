@@ -3,17 +3,25 @@ import Link from 'next/link';
 
 import { House } from '@/app/types/House';
 
+interface HouseGridProps {
+  houses: House[];
+  searchValue: string;
+  filterValue: string;
+}
+
 export default function HousesGrid({
   houses,
   searchValue,
-}: {
-  houses: House[];
-  searchValue: string;
-}) {
-  const filteredHouses = houses.filter((house: House) =>
+  filterValue,
+}: HouseGridProps) {
+  const filteredHousesBySearch = houses.filter((house: House) =>
     `house ${house.name.toLowerCase()}`.includes(
       searchValue.trim().toLowerCase(),
     ),
+  );
+
+  const filteredHouses = filteredHousesBySearch.filter((house: House) =>
+    filterValue === 'All' ? true : filterValue === house.region,
   );
 
   return (

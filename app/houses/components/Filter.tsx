@@ -4,6 +4,11 @@ import { KeyboardEvent, useEffect, useRef, useState } from 'react';
 import { HiChevronDoubleDown, HiChevronDoubleUp } from 'react-icons/hi';
 import { GiCrossMark } from 'react-icons/gi';
 
+interface FilterProps {
+  filterValue: string;
+  setFilterValue: (region: string) => void;
+}
+
 const regionsArr: string[] = [
   'All',
   'Reach',
@@ -16,13 +21,7 @@ const regionsArr: string[] = [
   'Iron Islands',
 ];
 
-export default function Filter({
-  filterValue,
-  setFilterValue,
-}: {
-  filterValue: string;
-  setFilterValue: (region: string) => void;
-}) {
+export default function Filter({ filterValue, setFilterValue }: FilterProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const sortRef = useRef<HTMLDivElement>(null);
 
