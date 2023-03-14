@@ -1,6 +1,16 @@
 import { housesNames } from '@/app/data/houses';
 import { House as IHouse } from '@/app/types/House';
 
+export async function generateStaticParams() {
+  const houses = await fetch(
+    'https://6344adb1dcae733e8fe3067a.mockapi.io/photo-collection',
+  ).then((res) => res.json());
+
+  return houses.map((house: IHouse) => ({
+    name: house.name,
+  }));
+}
+
 async function getHouse(id: string) {
   const house = await fetch(
     `https://6344adb1dcae733e8fe3067a.mockapi.io/photo-collection/${id}`,
@@ -22,6 +32,7 @@ export default async function House({ params }: { params: { name: string } }) {
         /> */}
         <h2 className="pt-40 text-center font-cardo text-9xl">
           Single {house.name}
+          <p className="text-center text-3xl">{house.titles}</p>
         </h2>
       </section>
     </main>
