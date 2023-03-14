@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { House } from '@/app/types/House';
+import { images } from './images';
+// import img from '../../../public/houses/Arryn.webp';
 
 interface HouseGridProps {
   houses: House[];
@@ -33,10 +35,10 @@ export default function HousesGrid({
       }
     >
       {filteredHouses.length >= 1 ? (
-        filteredHouses.map((house: House) => (
+        filteredHouses.map((house: House, i) => (
           <div key={house.id} className="w-full rounded-md bg-black p-10">
             <Image
-              src={`/../public/houses/${house.name}.webp`}
+              src={images[i]}
               alt={house.name}
               width={160}
               height={176}
