@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import { housesNames } from '@/app/data/houses';
 import { House as IHouse } from '@/app/types/House';
 
@@ -20,6 +22,7 @@ async function getHouse(id: string) {
 
 export default async function House({ params }: { params: { name: string } }) {
   const house: IHouse = await getHouse(housesNames[params.name].toString());
+  const img = await import(`../../../public/houses/${house.name}.webp`);
 
   return (
     <main>
@@ -32,8 +35,15 @@ export default async function House({ params }: { params: { name: string } }) {
         /> */}
         <h2 className="pt-40 text-center font-cardo text-9xl">
           Single {house.name}
-          <p className="text-center text-3xl">{house.titles}</p>
         </h2>
+        <p className="text-center text-3xl">{house.titles}</p>
+        <Image
+          src={img}
+          alt={house.name}
+          width={160}
+          height={176}
+          className="m-auto mb-10 h-44 w-auto"
+        />
       </section>
     </main>
   );
