@@ -1,5 +1,5 @@
 export interface House {
-  id: number;
+  id: string;
   name: string;
   seat: string;
   region: string;

@@ -19,13 +19,14 @@ export default async function Characters() {
         </section>
         <section className="flex flex-wrap">
           {characters.map((character: any) => (
-            <Image
-              src={character.imageUrl}
-              alt={character.fullName}
-              key={character.id}
-              width={250}
-              height={150}
-            />
+            <span key={character.id}>characher</span>
+            // <Image
+            //   src={character.imageUrl}
+            //   alt={character.fullName}
+            //   key={character.id}
+            //   width={250}
+            //   height={150}
+            // />
           ))}
         </section>
       </section>
