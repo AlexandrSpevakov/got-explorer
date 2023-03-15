@@ -3,7 +3,7 @@ import MainContent from './components/MainContent';
 
 async function getHouses() {
   const houses = await fetch(
-    'https://6344adb1dcae733e8fe3067a.mockapi.io/photo-collection',
+    'https://6344adb1dcae733e8fe3067a.mockapi.io/houses',
   );
   return houses.json();
 }

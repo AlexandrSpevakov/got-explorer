@@ -9,7 +9,7 @@ import { House as IHouse } from '@/app/types/House';
 
 export async function generateStaticParams() {
   const houses = await fetch(
-    'https://6344adb1dcae733e8fe3067a.mockapi.io/photo-collection',
+    'https://6344adb1dcae733e8fe3067a.mockapi.io/houses',
   ).then((res) => res.json());
 
   return houses.map((house: IHouse) => ({
@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 
 async function getHouse(id: string) {
   const house = await fetch(
-    `https://6344adb1dcae733e8fe3067a.mockapi.io/photo-collection/${id}`,
+    `https://6344adb1dcae733e8fe3067a.mockapi.io/houses/${id}`,
   );
   return house.json();
 }
