@@ -11,6 +11,9 @@ import Frey from '../../../../public/houses/Frey.webp';
 import Bolton from '../../../../public/houses/Bolton.webp';
 import Reed from '../../../../public/houses/Reed.webp';
 import Mormont from '../../../../public/houses/Mormont.webp';
+import Karstark from '../../../../public/houses/Karstark.webp';
+import Manderly from '../../../../public/houses/Manderly.webp';
+import Blackwood from '../../../../public/houses/Blackwood.webp';
 
 export const images = [
   Stark,
@@ -26,4 +29,7 @@ export const images = [
   Bolton,
   Reed,
   Mormont,
+  Karstark,
+  Manderly,
+  Blackwood,
 ];

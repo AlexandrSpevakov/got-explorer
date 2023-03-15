@@ -13,4 +13,7 @@ export const housesNames: any = {
   Bolton: 11,
   Reed: 12,
   Mormont: 13,
+  Karstark: 14,
+  Manderly: 15,
+  Blackwood: 16,
 };

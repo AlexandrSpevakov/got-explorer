@@ -11,6 +11,7 @@ import Frey from '../../../../public/houses/bgs/Frey.jpeg';
 import Bolton from '../../../../public/houses/bgs/Bolton.jpeg';
 import Reed from '../../../../public/houses/bgs/Reed.jpeg';
 import Mormont from '../../../../public/houses/bgs/Mormont.jpeg';
+import Karstark from '../../../../public/houses/bgs/Karstark.jpeg';
 
 export const bgs = [
   Stark,
@@ -26,4 +27,5 @@ export const bgs = [
   Bolton,
   Reed,
   Mormont,
+  Karstark,
 ];

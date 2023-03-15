@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 import { housesNames } from '@/app/data/houses';
 import { images } from '../data/images/images';
-import { bgs } from '../data/bgs/bgs';
-// import bg from '../../../public/houses/bgs/2.jpeg';
+// import { bgs } from '../data/bgs/bgs';
+import bg from '../../../public/houses/bgs/1.jpeg';
 import { House as IHouse } from '@/app/types/House';
 
 export async function generateStaticParams() {
@@ -31,12 +31,12 @@ export default async function House({ params }: { params: { name: string } }) {
     <main className="m-auto w-11/12">
       <div
         className="absolute top-0 left-0 z-[-1] h-screen w-screen bg-cover bg-center bg-no-repeat opacity-7"
-        style={{
-          backgroundImage: `url(${bgs[+house.id - 1].src})`,
-        }}
         // style={{
-        //   backgroundImage: `url(${bg.src})`,
+        //   backgroundImage: `url(${bgs[+house.id - 1].src})`,
         // }}
+        style={{
+          backgroundImage: `url(${bg.src})`,
+        }}
       />
       <section className="h-screen">
         <h2 className="pt-28 text-center font-cardo text-9xl">
