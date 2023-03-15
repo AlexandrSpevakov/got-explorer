@@ -7,15 +7,15 @@ import { bgs } from '../data/bgs/bgs';
 // import bg from '../../../public/houses/bgs/Blackwood.jpeg';
 import { House as IHouse } from '@/app/types/House';
 
-export async function generateStaticParams() {
-  const houses = await fetch(
-    'https://6344adb1dcae733e8fe3067a.mockapi.io/photo-collection',
-  ).then((res) => res.json());
+// export async function generateStaticParams() {
+//   const houses = await fetch(
+//     'https://6344adb1dcae733e8fe3067a.mockapi.io/photo-collection',
+//   ).then((res) => res.json());
 
-  return houses.map((house: IHouse) => ({
-    name: house.name,
-  }));
-}
+//   return houses.map((house: IHouse) => ({
+//     name: house.name,
+//   }));
+// }
 
 async function getHouse(id: string) {
   const house = await fetch(
@@ -42,14 +42,14 @@ export default async function House({ params }: { params: { name: string } }) {
         <h2 className="pt-28 text-center font-cardo text-9xl">
           House {house.name}
         </h2>
-        {/* <Image
+        <Image
           src={images[+house.id - 1]}
           alt={house.name}
           className="mx-auto mt-12 h-3/5 w-auto"
-        /> */}
+        />
       </section>
 
-      {/* <section className="mx-auto mt-16 grid w-4/6 grid-cols-card items-center justify-items-center gap-y-10 rounded-md bg-black/40 py-10 px-14 text-center text-4xl">
+      <section className="mx-auto mt-16 grid w-4/6 grid-cols-card items-center justify-items-center gap-y-10 rounded-md bg-black/40 py-10 px-14 text-center text-4xl">
         <div className="flex  w-full border-b-4 border-stone-600 pb-4 text-zinc-400">
           <span className="">Seat</span>
         </div>
@@ -84,7 +84,7 @@ export default async function House({ params }: { params: { name: string } }) {
             <span key={i}>{title}</span>
           ))}
         </div>
-      </section> */}
+      </section>
       <section className="mx-auto mt-20 w-10/12">
         <h3 className="mb-16 text-center text-7xl">Description</h3>
         {house.description?.map((par, i) => (
