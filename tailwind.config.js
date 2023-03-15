@@ -23,6 +23,9 @@ module.exports = {
       outlineWidth: {
         3: '3px',
       },
+      gridTemplateColumns: {
+        card: '30% 70%',
+      },
     },
   },
   plugins: [],
