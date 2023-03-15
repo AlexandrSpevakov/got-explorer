@@ -1,29 +1,29 @@
-// import Stark from '../../../../public/houses/bgs/Stark.webp';
-// import Lannister from '../../../../public/houses/bgs/Lannister.webp';
-// import Greyjoy from '../../../../public/houses/bgs/Greyjoy.webp';
-// import Baratheon from '../../../../public/houses/bgs/Baratheon.webp';
-// import Arryn from '../../../../public/houses/bgs/Arryn.webp';
-// import Tully from '../../../../public/houses/bgs/Tully.webp';
-// import Tyrell from '../../../../public/houses/bgs/Tyrell.webp';
-// import Targaryen from '../../../../public/houses/bgs/Targaryen.webp';
-// import Martell from '../../../../public/houses/bgs/Martell.webp';
-// import Frey from '../../../../public/houses/bgs/Frey.webp';
-// import Bolton from '../../../../public/houses/bgs/Bolton.webp';
-// import Reed from '../../../../public/houses/bgs/Reed.webp';
-// import Mormont from '../../../../public/houses/bgs/Mormont.webp';
+import Stark from '../../../../public/houses/bgs/Stark.jpeg';
+import Lannister from '../../../../public/houses/bgs/Lannister.jpeg';
+import Greyjoy from '../../../../public/houses/bgs/Greyjoy.jpeg';
+import Baratheon from '../../../../public/houses/bgs/Baratheon.jpeg';
+import Arryn from '../../../../public/houses/bgs/Arryn.jpeg';
+import Tully from '../../../../public/houses/bgs/Tully.jpeg';
+import Tyrell from '../../../../public/houses/bgs/Tyrell.jpeg';
+import Targaryen from '../../../../public/houses/bgs/Targaryen.jpeg';
+import Martell from '../../../../public/houses/bgs/Martell.jpeg';
+import Frey from '../../../../public/houses/bgs/Frey.jpeg';
+import Bolton from '../../../../public/houses/bgs/Bolton.jpeg';
+import Reed from '../../../../public/houses/bgs/Reed.jpeg';
+import Mormont from '../../../../public/houses/bgs/Mormont.jpeg';
 
-// export const bgs = [
-//   Stark,
-//   Lannister,
-//   Greyjoy,
-//   Baratheon,
-//   Arryn,
-//   Tully,
-//   Tyrell,
-//   Targaryen,
-//   Martell,
-//   Frey,
-//   Bolton,
-//   Reed,
-//   Mormont,
-// ];
+export const bgs = [
+  Stark,
+  Lannister,
+  Greyjoy,
+  Baratheon,
+  Arryn,
+  Tully,
+  Tyrell,
+  Targaryen,
+  Martell,
+  Frey,
+  Bolton,
+  Reed,
+  Mormont,
+];
