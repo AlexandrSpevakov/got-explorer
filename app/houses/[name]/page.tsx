@@ -16,6 +16,7 @@ import { House as IHouse } from '@/app/types/House';
 //     name: house.name,
 //   }));
 // }
+//
 
 async function getHouse(id: string) {
   const house = await fetch(
