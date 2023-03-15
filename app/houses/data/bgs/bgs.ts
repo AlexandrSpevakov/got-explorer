@@ -12,6 +12,8 @@ import Bolton from '../../../../public/houses/bgs/Bolton.jpeg';
 import Reed from '../../../../public/houses/bgs/Reed.jpeg';
 import Mormont from '../../../../public/houses/bgs/Mormont.jpeg';
 import Karstark from '../../../../public/houses/bgs/Karstark.jpeg';
+import Manderly from '../../../../public/houses/bgs/Manderly.jpeg';
+import Blackwood from '../../../../public/houses/bgs/Blackwood.jpeg';
 
 export const bgs = [
   Stark,
@@ -28,4 +30,6 @@ export const bgs = [
   Reed,
   Mormont,
   Karstark,
+  Manderly,
+  Blackwood,
 ];
