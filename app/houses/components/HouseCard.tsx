@@ -6,14 +6,13 @@ import { images } from '../data/images/images';
 
 interface HouseCardProps {
   house: House;
-  index: number;
 }
 
-export default function HousesCard({ house, index }: HouseCardProps) {
+export default function HousesCard({ house }: HouseCardProps) {
   return (
     <div key={house.id} className="w-full rounded-md bg-black p-10">
       <Image
-        src={images[index]}
+        src={images[+house.id - 1]}
         alt={house.name}
         width={160}
         height={176}

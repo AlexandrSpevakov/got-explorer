@@ -31,8 +31,8 @@ export default function HousesGrid({
       }
     >
       {filteredHouses.length >= 1 ? (
-        filteredHouses.map((house: House, index) => (
-          <HousesCard key={house.id} house={house} index={index} />
+        filteredHouses.map((house: House) => (
+          <HousesCard key={house.id} house={house} />
         ))
       ) : (
         <h3 className="my-60 text-center text-5xl">
