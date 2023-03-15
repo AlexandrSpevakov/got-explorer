@@ -7,16 +7,15 @@ import { bgs } from '../data/bgs/bgs';
 // import bg from '../../../public/houses/bgs/Blackwood.jpeg';
 import { House as IHouse } from '@/app/types/House';
 
-// export async function generateStaticParams() {
-//   const houses = await fetch(
-//     'https://6344adb1dcae733e8fe3067a.mockapi.io/photo-collection',
-//   ).then((res) => res.json());
+export async function generateStaticParams() {
+  const houses = await fetch(
+    'https://6344adb1dcae733e8fe3067a.mockapi.io/photo-collection',
+  ).then((res) => res.json());
 
-//   return houses.map((house: IHouse) => ({
-//     name: house.name,
-//   }));
-// }
-//
+  return houses.map((house: IHouse) => ({
+    name: house.name,
+  }));
+}
 
 async function getHouse(id: string) {
   const house = await fetch(
