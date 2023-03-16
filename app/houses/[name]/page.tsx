@@ -101,7 +101,7 @@ export default async function House({ params }: { params: { name: string } }) {
         ))}
         <Link
           href="/houses"
-          className="mx-auto mt-44 mb-24 block w-fit rounded-md bg-zinc-700 py-5 px-10 text-5xl duration-300 hover:bg-orange-600"
+          className="mx-auto mt-44 mb-24 block w-fit rounded-md bg-zinc-700 py-4 px-8 text-4xl duration-300 hover:bg-orange-600"
         >
           Back to Houses
         </Link>
