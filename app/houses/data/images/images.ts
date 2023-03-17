@@ -33,6 +33,10 @@ import Bulwer from '../../../../public/houses/Bulwer.webp';
 import Crakehall from '../../../../public/houses/Crakehall.webp';
 import Farman from '../../../../public/houses/Farman.webp';
 import Fossoway from '../../../../public/houses/Fossoway.webp';
+import Fowler from '../../../../public/houses/Fowler.webp';
+import Graceford from '../../../../public/houses/Graceford.webp';
+import Grandison from '../../../../public/houses/Grandison.webp';
+import Jordayne from '../../../../public/houses/Jordayne.webp';
 
 export const images = [
   Stark,
@@ -70,4 +74,8 @@ export const images = [
   Crakehall,
   Farman,
   Fossoway,
+  Fowler,
+  Graceford,
+  Grandison,
+  Jordayne,
 ];
