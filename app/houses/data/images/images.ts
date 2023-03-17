@@ -23,6 +23,11 @@ import Royce from '../../../../public/houses/Royce.webp';
 import Cerwyn from '../../../../public/houses/Cerwyn.webp';
 import Caron from '../../../../public/houses/Caron.webp';
 import Mallister from '../../../../public/houses/Mallister.webp';
+import Mooton from '../../../../public/houses/Mooton.webp';
+import Velaryon from '../../../../public/houses/Velaryon.webp';
+import Stokeworth from '../../../../public/houses/Stokeworth.webp';
+import Marbrand from '../../../../public/houses/Marbrand.webp';
+import Allyrion from '../../../../public/houses/Allyrion.webp';
 
 export const images = [
   Stark,
@@ -50,4 +55,9 @@ export const images = [
   Cerwyn,
   Caron,
   Mallister,
+  Mooton,
+  Velaryon,
+  Stokeworth,
+  Marbrand,
+  Allyrion,
 ];
