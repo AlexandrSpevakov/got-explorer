@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { housesNames } from '@/app/data/houses';
 import { images } from '../data/images/images';
 import { bgs } from '../data/bgs/bgs';
-// import bg from '../../../public/houses/bgs/Blackwood.jpeg';
 import { House as IHouse } from '@/app/types/House';
 
 export async function generateStaticParams() {
@@ -34,9 +33,6 @@ export default async function House({ params }: { params: { name: string } }) {
         style={{
           backgroundImage: `url(${bgs[+house.id - 1].src})`,
         }}
-        // style={{
-        //   backgroundImage: `url(${bg.src})`,
-        // }}
       />
       <section className="h-screen">
         <h2 className="pt-28 text-center font-cardo text-9xl">

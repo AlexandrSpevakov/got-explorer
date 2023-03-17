@@ -14,6 +14,12 @@ import Mormont from '../../../../public/houses/bgs/Mormont.jpeg';
 import Karstark from '../../../../public/houses/bgs/Karstark.jpeg';
 import Manderly from '../../../../public/houses/bgs/Manderly.jpeg';
 import Blackwood from '../../../../public/houses/bgs/Blackwood.jpeg';
+import Tarly from '../../../../public/houses/bgs/Tarly.jpeg';
+import Hornwood from '../../../../public/houses/bgs/Hornwood.jpeg';
+import Dayne from '../../../../public/houses/bgs/Dayne.jpeg';
+import Connington from '../../../../public/houses/bgs/Connington.jpeg';
+import Hightower from '../../../../public/houses/bgs/Hightower.jpeg';
+import Royce from '../../../../public/houses/bgs/Royce.jpeg';
 
 export const bgs = [
   Stark,
@@ -32,4 +38,10 @@ export const bgs = [
   Karstark,
   Manderly,
   Blackwood,
+  Tarly,
+  Hornwood,
+  Dayne,
+  Connington,
+  Hightower,
+  Royce,
 ];
