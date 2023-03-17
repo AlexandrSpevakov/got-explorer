@@ -35,6 +35,9 @@ import Farman from '../../../../public/houses/bgs/Farman.jpeg';
 import Fossoway from '../../../../public/houses/bgs/Fossoway.jpeg';
 import Fowler from '../../../../public/houses/bgs/Fowler.jpeg';
 import Graceford from '../../../../public/houses/bgs/Graceford.jpeg';
+import Grandison from '../../../../public/houses/bgs/Grandison.jpeg';
+import Jordayne from '../../../../public/houses/bgs/Jordayne.jpeg';
+import Oakheart from '../../../../public/houses/bgs/Oakheart.jpeg';
 
 export const bgs = [
   Stark,
@@ -74,4 +77,7 @@ export const bgs = [
   Fossoway,
   Fowler,
   Graceford,
+  Grandison,
+  Jordayne,
+  Oakheart,
 ];
