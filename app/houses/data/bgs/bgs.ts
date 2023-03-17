@@ -38,6 +38,8 @@ import Graceford from '../../../../public/houses/bgs/Graceford.jpeg';
 import Grandison from '../../../../public/houses/bgs/Grandison.jpeg';
 import Jordayne from '../../../../public/houses/bgs/Jordayne.jpeg';
 import Oakheart from '../../../../public/houses/bgs/Oakheart.jpeg';
+import Piper from '../../../../public/houses/bgs/Piper.jpeg';
+import Redfort from '../../../../public/houses/bgs/Redfort.jpeg';
 
 export const bgs = [
   Stark,
@@ -80,4 +82,6 @@ export const bgs = [
   Grandison,
   Jordayne,
   Oakheart,
+  Piper,
+  Redfort,
 ];
