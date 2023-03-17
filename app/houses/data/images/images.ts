@@ -28,6 +28,11 @@ import Velaryon from '../../../../public/houses/Velaryon.webp';
 import Stokeworth from '../../../../public/houses/Stokeworth.webp';
 import Marbrand from '../../../../public/houses/Marbrand.webp';
 import Allyrion from '../../../../public/houses/Allyrion.webp';
+import Beesbury from '../../../../public/houses/Beesbury.webp';
+import Bulwer from '../../../../public/houses/Bulwer.webp';
+import Crakehall from '../../../../public/houses/Crakehall.webp';
+import Farman from '../../../../public/houses/Farman.webp';
+import Fossoway from '../../../../public/houses/Fossoway.webp';
 
 export const images = [
   Stark,
@@ -60,4 +65,9 @@ export const images = [
   Stokeworth,
   Marbrand,
   Allyrion,
+  Beesbury,
+  Bulwer,
+  Crakehall,
+  Farman,
+  Fossoway,
 ];
