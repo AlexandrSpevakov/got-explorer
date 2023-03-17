@@ -32,6 +32,9 @@ import Beesbury from '../../../../public/houses/bgs/Beesbury.jpeg';
 import Bulwer from '../../../../public/houses/bgs/Bulwer.jpeg';
 import Crakehall from '../../../../public/houses/bgs/Crakehall.jpeg';
 import Farman from '../../../../public/houses/bgs/Farman.jpeg';
+import Fossoway from '../../../../public/houses/bgs/Fossoway.jpeg';
+import Fowler from '../../../../public/houses/bgs/Fowler.jpeg';
+import Graceford from '../../../../public/houses/bgs/Graceford.jpeg';
 
 export const bgs = [
   Stark,
@@ -68,4 +71,7 @@ export const bgs = [
   Bulwer,
   Crakehall,
   Farman,
+  Fossoway,
+  Fowler,
+  Graceford,
 ];
