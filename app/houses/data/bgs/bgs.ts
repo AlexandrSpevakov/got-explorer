@@ -27,6 +27,11 @@ import Mooton from '../../../../public/houses/bgs/Mooton.jpeg';
 import Velaryon from '../../../../public/houses/bgs/Velaryon.jpeg';
 import Stokeworth from '../../../../public/houses/bgs/Stokeworth.jpeg';
 import Marbrand from '../../../../public/houses/bgs/Marbrand.jpeg';
+import Allyrion from '../../../../public/houses/bgs/Allyrion.jpeg';
+import Beesbury from '../../../../public/houses/bgs/Beesbury.jpeg';
+import Bulwer from '../../../../public/houses/bgs/Bulwer.jpeg';
+import Crakehall from '../../../../public/houses/bgs/Crakehall.jpeg';
+import Farman from '../../../../public/houses/bgs/Farman.jpeg';
 
 export const bgs = [
   Stark,
@@ -58,4 +63,9 @@ export const bgs = [
   Velaryon,
   Stokeworth,
   Marbrand,
+  Allyrion,
+  Beesbury,
+  Bulwer,
+  Crakehall,
+  Farman,
 ];
