@@ -23,6 +23,10 @@ import Royce from '../../../../public/houses/bgs/Royce.jpeg';
 import Cerwyn from '../../../../public/houses/bgs/Cerwyn.jpeg';
 import Caron from '../../../../public/houses/bgs/Caron.jpeg';
 import Mallister from '../../../../public/houses/bgs/Mallister.jpeg';
+import Mooton from '../../../../public/houses/bgs/Mooton.jpeg';
+import Velaryon from '../../../../public/houses/bgs/Velaryon.jpeg';
+import Stokeworth from '../../../../public/houses/bgs/Stokeworth.jpeg';
+import Marbrand from '../../../../public/houses/bgs/Marbrand.jpeg';
 
 export const bgs = [
   Stark,
@@ -50,4 +54,8 @@ export const bgs = [
   Cerwyn,
   Caron,
   Mallister,
+  Mooton,
+  Velaryon,
+  Stokeworth,
+  Marbrand,
 ];
