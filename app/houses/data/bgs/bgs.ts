@@ -20,6 +20,9 @@ import Dayne from '../../../../public/houses/bgs/Dayne.jpeg';
 import Connington from '../../../../public/houses/bgs/Connington.jpeg';
 import Hightower from '../../../../public/houses/bgs/Hightower.jpeg';
 import Royce from '../../../../public/houses/bgs/Royce.jpeg';
+import Cerwyn from '../../../../public/houses/bgs/Cerwyn.jpeg';
+import Caron from '../../../../public/houses/bgs/Caron.jpeg';
+import Mallister from '../../../../public/houses/bgs/Mallister.jpeg';
 
 export const bgs = [
   Stark,
@@ -44,4 +47,7 @@ export const bgs = [
   Connington,
   Hightower,
   Royce,
+  Cerwyn,
+  Caron,
+  Mallister,
 ];
