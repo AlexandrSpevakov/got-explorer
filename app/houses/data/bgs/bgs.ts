@@ -1,3 +1,4 @@
+/* eslint-disable import/no-duplicates */
 import Stark from '../../../../public/houses/bgs/Stark.jpeg';
 import Lannister from '../../../../public/houses/bgs/Lannister.jpeg';
 import Greyjoy from '../../../../public/houses/bgs/Greyjoy.jpeg';
@@ -34,11 +35,11 @@ import Crakehall from '../../../../public/houses/bgs/Crakehall.jpeg';
 import Farman from '../../../../public/houses/bgs/Farman.jpeg';
 import Fossoway from '../../../../public/houses/bgs/Fossoway.jpeg';
 import Fowler from '../../../../public/houses/bgs/Fowler.jpeg';
-import Graceford from '../../../../public/houses/bgs/Graceford.jpeg';
+import Graceford from '../../../../public/houses/bgs/Stark.jpeg';
 import Grandison from '../../../../public/houses/bgs/Grandison.jpeg';
-import Jordayne from '../../../../public/houses/bgs/Jordayne.jpeg';
+import Jordayne from '../../../../public/houses/bgs/Stark.jpeg';
 import Oakheart from '../../../../public/houses/bgs/Oakheart.jpeg';
-import Piper from '../../../../public/houses/bgs/Piper.jpeg';
+import Piper from '../../../../public/houses/bgs/Stark.jpeg';
 import Redfort from '../../../../public/houses/bgs/Redfort.jpeg';
 
 export const bgs = [
