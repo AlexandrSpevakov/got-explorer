@@ -18,6 +18,11 @@ import Tarly from '../../../../public/houses/Tarly.webp';
 import Hornwood from '../../../../public/houses/Hornwood.webp';
 import Dayne from '../../../../public/houses/Dayne.webp';
 import Connington from '../../../../public/houses/Connington.webp';
+import Hightower from '../../../../public/houses/Hightower.webp';
+import Royce from '../../../../public/houses/Royce.webp';
+import Cerwyn from '../../../../public/houses/Cerwyn.webp';
+import Caron from '../../../../public/houses/Caron.webp';
+import Mallister from '../../../../public/houses/Mallister.webp';
 
 export const images = [
   Stark,
@@ -40,4 +45,9 @@ export const images = [
   Hornwood,
   Dayne,
   Connington,
+  Hightower,
+  Royce,
+  Cerwyn,
+  Caron,
+  Mallister,
 ];
