@@ -37,6 +37,9 @@ import Fowler from '../../../../public/houses/Fowler.webp';
 import Graceford from '../../../../public/houses/Graceford.webp';
 import Grandison from '../../../../public/houses/Grandison.webp';
 import Jordayne from '../../../../public/houses/Jordayne.webp';
+import Oakheart from '../../../../public/houses/Oakheart.webp';
+import Piper from '../../../../public/houses/Piper.webp';
+import Redfort from '../../../../public/houses/Redfort.webp';
 
 export const images = [
   Stark,
@@ -78,4 +81,7 @@ export const images = [
   Graceford,
   Grandison,
   Jordayne,
+  Oakheart,
+  Piper,
+  Redfort,
 ];
