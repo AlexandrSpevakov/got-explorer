@@ -14,6 +14,10 @@ import Mormont from '../../../../public/houses/Mormont.webp';
 import Karstark from '../../../../public/houses/Karstark.webp';
 import Manderly from '../../../../public/houses/Manderly.webp';
 import Blackwood from '../../../../public/houses/Blackwood.webp';
+import Tarly from '../../../../public/houses/Tarly.webp';
+import Hornwood from '../../../../public/houses/Hornwood.webp';
+import Dayne from '../../../../public/houses/Dayne.webp';
+import Connington from '../../../../public/houses/Connington.webp';
 
 export const images = [
   Stark,
@@ -32,4 +36,8 @@ export const images = [
   Karstark,
   Manderly,
   Blackwood,
+  Tarly,
+  Hornwood,
+  Dayne,
+  Connington,
 ];
