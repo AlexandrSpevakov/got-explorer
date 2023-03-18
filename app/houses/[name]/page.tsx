@@ -1,10 +1,9 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { housesNames } from '@/app/data/houses';
-import { images } from '../data/images/images';
 import { bgs } from '../data/bgs/bgs';
 import { House as IHouse } from '@/app/types/House';
+import TopSection from './components/TopSection';
 
 export async function generateStaticParams() {
   const houses = await fetch(
@@ -34,16 +33,7 @@ export default async function House({ params }: { params: { name: string } }) {
           backgroundImage: `url(${bgs[+house.id - 1].src})`,
         }}
       />
-      <section className="h-screen">
-        <h2 className="pt-28 text-center font-cardo text-9xl">
-          House {house.name}
-        </h2>
-        <Image
-          src={images[+house.id - 1]}
-          alt={house.name}
-          className="mx-auto mt-12 h-3/5 w-auto"
-        />
-      </section>
+      <TopSection houseName={house.name} id={house.id} />
 
       <section className="mx-auto mt-16 grid w-4/6 grid-cols-card items-center justify-items-center gap-y-10 rounded-md bg-black/40 py-10 px-14 text-center text-4xl">
         <div className="flex  w-full border-b-4 border-stone-600 pb-4 text-zinc-400">
