@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import map2 from '../../public/map2.jpeg';
-import bg5 from '../../public/houses5.jpeg';
+import map2 from '../../public/home/map2.jpeg';
+import bg5 from '../../public/home/houses5.jpeg';
 
 export default function Houses() {
   return (

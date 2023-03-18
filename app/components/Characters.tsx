@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import nedStark from '../../public/nedStark.webp';
-import bg from '../../public/faces.jpeg';
+import nedStark from '../../public/home/nedStark.webp';
+import bg from '../../public/home/faces.jpeg';
 
 export default function Characters() {
   return (
-    <article>
-      <section id="houses" className="mx-auto w-11/12">
+    <article id="houses">
+      <section className="mx-auto w-11/12">
         <h2 className="pt-20 text-center font-cardo text-[84px] 2xl:text-8xl">
           Characters
         </h2>

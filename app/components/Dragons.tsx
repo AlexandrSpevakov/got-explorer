@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import dragon from '../../public/dragon.webp';
-import bg from '../../public/dragons.webp';
+import dragon from '../../public/home/dragon.webp';
+import bg from '../../public/home/dragons.webp';
 
 export default function Dragons() {
   return (

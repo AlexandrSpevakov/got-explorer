@@ -1,6 +1,6 @@
 import { TbArrowDownRhombus } from 'react-icons/tb';
 
-import bg1 from '../../public/hero-bg1.jpg';
+import bg1 from '../../public/home/hero-bg1.jpg';
 
 export default function Hero() {
   return (
