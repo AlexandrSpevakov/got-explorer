@@ -14,6 +14,7 @@ module.exports = {
         tulpen: ['var(--font-tulpen)'],
       },
       spacing: {
+        18: '4.5rem',
         '8.5/10': '85%',
       },
       opacity: {
