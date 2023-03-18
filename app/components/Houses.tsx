@@ -1,19 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import map2 from '../../public/home/map2.jpeg';
-import bg5 from '../../public/home/houses5.jpeg';
+import housesImg from '../../public/home/housesImg.jpeg';
+import housesBg from '../../public/home/housesBg.jpeg';
 
 export default function Houses() {
   return (
-    <article>
-      <section id="houses" className="mx-auto w-11/12">
-        <h2 className="pt-32 text-center font-cardo text-[84px] 2xl:text-8xl">
+    <article id="houses">
+      <section className="mx-auto w-11/12">
+        <h2 className="pt-24 text-center font-cardo text-[84px] 2xl:text-8xl">
           The Noble Houses of Westeros
         </h2>
         <section className="mt-0 2xl:mt-12">
           <Image
-            src={map2}
+            src={housesImg}
             alt="map"
             className="float-right ml-5 w-4/12 rounded-md 2xl:w-2/12"
           />
@@ -66,7 +66,7 @@ export default function Houses() {
         <div
           className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-10 duration-700 group-hover:opacity-7"
           style={{
-            backgroundImage: `url(${bg5.src})`,
+            backgroundImage: `url(${housesBg.src})`,
           }}
         />
         <h3 className="absolute top-1/4 right-1/2 w-4/6 translate-x-1/2 text-center font-cardo text-7xl opacity-100 duration-500 group-hover:text-orange-600 2xl:text-8xl">
