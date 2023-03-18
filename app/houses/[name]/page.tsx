@@ -4,6 +4,7 @@ import { housesNames } from '@/app/data/houses';
 import { bgs } from '../data/bgs/bgs';
 import { House as IHouse } from '@/app/types/House';
 import TopSection from './components/TopSection';
+import Card from './components/Card';
 
 export async function generateStaticParams() {
   const data = await fetch(
@@ -25,7 +26,6 @@ async function getHouse(id: number) {
 }
 
 export default async function House({ params }: { params: { name: string } }) {
-  // console.log(housesNames[params.name]);
   const house: IHouse = await getHouse(housesNames[params.name]);
 
   return (
@@ -36,44 +36,16 @@ export default async function House({ params }: { params: { name: string } }) {
           backgroundImage: `url(${bgs[+house.id - 1].src})`,
         }}
       />
+
       <TopSection houseName={house.name} id={house.id} />
 
-      <section className="mx-auto mt-16 grid w-4/6 grid-cols-card items-center justify-items-center gap-y-10 rounded-md bg-black/40 py-10 px-14 text-center text-4xl">
-        <div className="flex  w-full border-b-4 border-stone-600 pb-4 text-zinc-400">
-          <span className="">Seat</span>
-        </div>
-        <span className="w-full border-b-4 border-stone-600 pb-4">
-          {house.seat}
-        </span>
-        <div className="flex  w-full border-b-4 border-stone-600 pb-4 text-zinc-400">
-          <span className="">Region</span>
-        </div>
-        <div className="w-full border-b-4 border-stone-600 pb-4">
-          {house.region}
-        </div>
-        <div className="flex  w-full border-b-4 border-stone-600 pb-4 text-zinc-400">
-          <span className="">Words</span>
-        </div>
-        <span className="w-full border-b-4 border-stone-600 pb-4">
-          &quot;{house.words}&quot;
-        </span>
-        <div className="flex  w-full border-b-4 border-stone-600 pb-4 text-zinc-400">
-          <span className="">Religion</span>
-        </div>
-        <span className="w-full border-b-4 border-stone-600 pb-4">
-          {house.religion}
-        </span>
-        <div className="flex  h-full w-full text-zinc-400">
-          <span className="self-center">
-            {house.titles.length > 2 ? 'Titles' : 'Title'}
-          </span>
-        </div>
-        <div className="flex w-full flex-col text-3xl">
-          {house.titles.map((title, i) => (
-            <span key={i}>{title}</span>
-          ))}
-        </div>
-      </section>
+      <Card
+        seat={house.seat}
+        region={house.region}
+        words={house.words}
+        religion={house.religion}
+        titles={house.titles}
+      />
       <section className="mx-auto mt-20 w-10/12">
         <h3 className="mb-16 text-center text-7xl">Description</h3>
         {house.description?.map((par, i) => (
