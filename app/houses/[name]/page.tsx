@@ -1,10 +1,9 @@
-import Link from 'next/link';
-
 import { housesNames } from '@/app/data/houses';
 import { bgs } from '../data/bgs/bgs';
 import { House as IHouse } from '@/app/types/House';
 import TopSection from './components/TopSection';
 import Card from './components/Card';
+import Description from './components/Description';
 
 export async function generateStaticParams() {
   const data = await fetch(
@@ -46,27 +45,8 @@ export default async function House({ params }: { params: { name: string } }) {
         religion={house.religion}
         titles={house.titles}
       />
-      <section className="mx-auto mt-20 w-10/12">
-        <h3 className="mb-16 text-center text-7xl">Description</h3>
-        {house.description?.map((par, i) => (
-          <p
-            key={i}
-            className={
-              i !== 0
-                ? 'mb-12 text-2xl'
-                : 'mb-12 text-2xl first-letter:font-cardo first-letter:text-7xl first-letter:leading-3'
-            }
-          >
-            {par}
-          </p>
-        ))}
-        <Link
-          href="/houses"
-          className="mx-auto mt-44 mb-24 block w-fit rounded-md bg-zinc-700 py-4 px-8 text-4xl duration-300 hover:bg-orange-600"
-        >
-          Back to Houses
-        </Link>
-      </section>
+
+      <Description description={house.description} />
     </main>
   );
 }
