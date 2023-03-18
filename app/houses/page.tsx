@@ -1,4 +1,4 @@
-import heroBg from '../../public/houses/hero-bg.webp';
+import heroBg from '../../public/houses/heroBg.webp';
 import MainContent from './components/MainContent';
 
 async function getHouses() {
