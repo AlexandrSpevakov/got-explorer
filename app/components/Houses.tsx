@@ -15,7 +15,7 @@ export default function Houses() {
           <Image
             src={housesImg}
             alt="map"
-            className="float-right ml-5 w-4/12 rounded-md 2xl:w-2/12"
+            className="float-right ml-5 mb-3 w-4/12 rounded-md 2xl:w-2/12"
           />
           <p className="mt-8 text-3xl">
             The Great Houses are the most powerful of the noble houses of the
@@ -61,7 +61,7 @@ export default function Houses() {
       </section>
       <Link
         href="/houses"
-        className="group relative mt-28 flex h-96 w-screen items-center justify-center bg-black 2xl:mt-44"
+        className="group relative mt-12 flex h-96 w-screen items-center justify-center bg-black 2xl:mt-44"
       >
         <div
           className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-10 duration-700 group-hover:opacity-7"
