@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { House } from '@/app/types/House';
-import { images } from '../data/images/images';
+import { images } from '../data/housesImages';
 
 interface HouseCardProps {
   house: House;

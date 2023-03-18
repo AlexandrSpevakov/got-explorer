@@ -41,7 +41,7 @@ import Oakheart from '../../../../public/houses/bgs/Oakheart.jpeg';
 import Piper from '../../../../public/houses/bgs/Piper.jpeg';
 import Redfort from '../../../../public/houses/bgs/Redfort.jpeg';
 
-export const bgs = [
+export const housesBgs = [
   Stark,
   Lannister,
   Greyjoy,

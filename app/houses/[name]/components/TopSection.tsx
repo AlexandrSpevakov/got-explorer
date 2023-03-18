@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { images } from '../../data/images/images';
+import { housesImages } from '../../data/housesImages';
 
 interface TopSectionProps {
   houseName: string;
@@ -14,7 +14,7 @@ export default function TopSection({ houseName, id }: TopSectionProps) {
         House {houseName}
       </h2>
       <Image
-        src={images[+id - 1]}
+        src={housesImages[+id - 1]}
         alt={houseName}
         className="mx-auto mt-12 h-3/5 w-auto"
       />

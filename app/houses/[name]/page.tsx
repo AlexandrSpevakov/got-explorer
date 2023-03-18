@@ -1,5 +1,5 @@
-import { housesNames } from '@/app/data/houses';
-import { bgs } from '../data/bgs/bgs';
+import { housesNames } from '@/app/houses/[name]/data/housesNames';
+import { housesBgs } from './data/housesBgs';
 import { House as IHouse } from '@/app/types/House';
 import TopSection from './components/TopSection';
 import Card from './components/Card';
@@ -32,7 +32,7 @@ export default async function House({ params }: { params: { name: string } }) {
       <div
         className="absolute top-0 left-0 z-[-1] h-screen w-screen bg-cover bg-center bg-no-repeat opacity-7"
         style={{
-          backgroundImage: `url(${bgs[+house.id - 1].src})`,
+          backgroundImage: `url(${housesBgs[+house.id - 1].src})`,
         }}
       />
 
