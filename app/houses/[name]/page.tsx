@@ -6,24 +6,27 @@ import { House as IHouse } from '@/app/types/House';
 import TopSection from './components/TopSection';
 
 export async function generateStaticParams() {
-  const houses = await fetch(
+  const data = await fetch(
     'https://6344adb1dcae733e8fe3067a.mockapi.io/houses',
-  ).then((res) => res.json());
+  );
+  const houses = await data.json();
 
   return houses.map((house: IHouse) => ({
     name: house.name,
   }));
 }
 
-async function getHouse(id: string) {
-  const house = await fetch(
+async function getHouse(id: number) {
+  const data = await fetch(
     `https://6344adb1dcae733e8fe3067a.mockapi.io/houses/${id}`,
   );
-  return house.json();
+  const house = await data.json();
+  return house;
 }
 
 export default async function House({ params }: { params: { name: string } }) {
-  const house: IHouse = await getHouse(housesNames[params.name].toString());
+  // console.log(housesNames[params.name]);
+  const house: IHouse = await getHouse(housesNames[params.name]);
 
   return (
     <main className="m-auto w-11/12">

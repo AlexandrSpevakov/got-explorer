@@ -2,10 +2,11 @@ import heroBg from '../../public/houses/hero-bg.webp';
 import MainContent from './components/MainContent';
 
 async function getHouses() {
-  const houses = await fetch(
+  const data = await fetch(
     'https://6344adb1dcae733e8fe3067a.mockapi.io/houses',
   );
-  return houses.json();
+  const houses = await data.json();
+  return houses;
 }
 
 export default async function Houses() {
