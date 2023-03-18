@@ -1,6 +1,6 @@
 import { housesNames } from '@/app/houses/[name]/data/housesNames';
 import { housesBgs } from './data/housesBgs';
-import { House as IHouse } from '@/app/types/House';
+import { IHouse } from '@/app/types/IHouse';
 import TopSection from './components/TopSection';
 import Card from './components/Card';
 import Description from './components/Description';

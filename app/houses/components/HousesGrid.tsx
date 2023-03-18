@@ -1,8 +1,8 @@
-import { House } from '@/app/types/House';
+import { IHouse } from '@/app/types/IHouse';
 import HousesCard from './HouseCard';
 
 interface HouseGridProps {
-  houses: House[];
+  houses: IHouse[];
   searchValue: string;
   filterValue: string;
 }
@@ -12,13 +12,13 @@ export default function HousesGrid({
   searchValue,
   filterValue,
 }: HouseGridProps) {
-  const filteredHousesBySearch = houses.filter((house: House) =>
+  const filteredHousesBySearch = houses.filter((house: IHouse) =>
     `house ${house.name.toLowerCase()}`.includes(
       searchValue.trim().toLowerCase(),
     ),
   );
 
-  const filteredHouses = filteredHousesBySearch.filter((house: House) =>
+  const filteredHouses = filteredHousesBySearch.filter((house: IHouse) =>
     filterValue === 'All' ? true : filterValue === house.region,
   );
 
@@ -31,7 +31,7 @@ export default function HousesGrid({
       }
     >
       {filteredHouses.length >= 1 ? (
-        filteredHouses.map((house: House) => (
+        filteredHouses.map((house: IHouse) => (
           <HousesCard key={house.id} house={house} />
         ))
       ) : (

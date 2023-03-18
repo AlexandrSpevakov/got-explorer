@@ -4,10 +4,10 @@ import { useState } from 'react';
 
 import HousesGrid from './HousesGrid';
 import Search from './Search';
-import { House } from '@/app/types/House';
+import { IHouse } from '@/app/types/IHouse';
 import Filter from './Filter';
 
-export default function MainContent({ houses }: { houses: House[] }) {
+export default function MainContent({ houses }: { houses: IHouse[] }) {
   const [searchValue, setSearchValue] = useState<string>('');
   const [filterValue, setFilterValue] = useState<string>('All');
 

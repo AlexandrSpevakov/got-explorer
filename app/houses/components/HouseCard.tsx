@@ -1,18 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { House } from '@/app/types/House';
-import { images } from '../data/housesImages';
+import { IHouse } from '@/app/types/IHouse';
+import { housesImages } from '../data/housesImages';
 
 interface HouseCardProps {
-  house: House;
+  house: IHouse;
 }
 
 export default function HousesCard({ house }: HouseCardProps) {
   return (
     <div key={house.id} className="w-full rounded-md bg-black p-10">
       <Image
-        src={images[+house.id - 1]}
+        src={housesImages[+house.id - 1]}
         alt={house.name}
         width={160}
         height={176}

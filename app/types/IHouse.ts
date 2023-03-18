@@ -1,4 +1,4 @@
-export interface House {
+export interface IHouse {
   id: string;
   name: string;
   seat: string;
