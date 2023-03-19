@@ -7,7 +7,7 @@ export default function Menu() {
   const path = usePathname();
 
   return (
-    <ul className="flex gap-x-8 text-2xl 2xl:gap-x-12 2xl:text-3xl">
+    <ul className="flex gap-x-5 text-xl lg:gap-x-8 lg:text-2xl 2xl:gap-x-12 2xl:text-3xl">
       <li>
         <Link
           href="/"
