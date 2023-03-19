@@ -34,7 +34,7 @@ export default function Hamburger() {
       )}
       {isOpen && (
         <section className="absolute top-full left-0 h-screen w-screen bg-black pt-5">
-          <ul className="flex flex-col gap-y-2 text-3xl">
+          <ul className="flex flex-col gap-y-2 text-xl sm:text-3xl">
             <li
               className={`group cursor-pointer duration-200 ${
                 path === '/' ? 'bg-orange-600/10' : 'hover:bg-orange-600/10'
