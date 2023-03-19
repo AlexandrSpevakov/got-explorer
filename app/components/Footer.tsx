@@ -20,7 +20,7 @@ export default function Footer() {
             <span>+1 (647) 473-9502 </span>
           </a>
         </li>
-        <li className="flex gap-x-[3.35rem] text-3xl">
+        <li className="flex gap-x-8 text-3xl lg:gap-x-[3.35rem] 2xl:text-4xl">
           <a
             href="https://github.com/AlexandrSpevakov/got-explorer"
             target="_blank"
