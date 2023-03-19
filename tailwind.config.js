@@ -13,6 +13,9 @@ module.exports = {
         mono: ['var(--font-karla)'],
         tulpen: ['var(--font-tulpen)'],
       },
+      fontSize: {
+        '7.5xl': '5.25rem',
+      },
       spacing: {
         18: '4.5rem',
         '8.5/10': '85%',

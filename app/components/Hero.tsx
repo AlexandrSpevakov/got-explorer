@@ -17,7 +17,7 @@ export default function Hero() {
 
       <a
         href="#houses"
-        className="absolute top-8.5/10 right-1/2 translate-x-1/2 text-center text-7xl duration-300 hover:text-orange-600"
+        className="absolute top-8.5/10 right-1/2 translate-x-1/2 text-center text-7xl duration-300 hover:text-orange-600 2xl:text-7.5xl"
       >
         <TbArrowDownRhombus />
       </a>
