@@ -1,6 +1,18 @@
 import heroBg from '../../public/houses/heroBg.webp';
 import MainContent from './components/MainContent';
 
+export const metadata = {
+  title: 'GOT | Houses',
+  description: 'Information about noble houses in the world of Game of Thrones',
+  keywords: [
+    'Noble houses of Westeros descriptions',
+    'Noble houses of Westeros information',
+    'Noble houses of Westeros',
+    'Noble houses in Game of Thrones',
+    'Noble houses of Game of Thrones descriptions',
+  ],
+};
+
 async function getHouses() {
   const data = await fetch(
     'https://6344adb1dcae733e8fe3067a.mockapi.io/houses',
