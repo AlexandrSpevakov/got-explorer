@@ -20,7 +20,7 @@ export default function Footer() {
             +1 (647) 473-9502
           </a>
         </li>
-        <li className="mx-auto flex gap-x-8 text-xl sm:text-2xl md:text-3xl lg:gap-x-[3.35rem] 2xl:text-4xl">
+        <li className="mx-auto flex gap-x-8 text-xl sm:mx-0 sm:text-2xl md:text-3xl lg:gap-x-[3.35rem] 2xl:text-4xl">
           <a
             href="https://github.com/AlexandrSpevakov/got-explorer"
             target="_blank"
