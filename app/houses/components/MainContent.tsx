@@ -13,7 +13,7 @@ export default function MainContent({ houses }: { houses: IHouse[] }) {
 
   return (
     <>
-      <section className="mt-40 flex items-center justify-around">
+      <section className="mt-40 flex items-center justify-around 2xl:mt-48">
         <Search searchValue={searchValue} setSearchValue={setSearchValue} />
         <Filter filterValue={filterValue} setFilterValue={setFilterValue} />
       </section>
