@@ -8,7 +8,7 @@ export default function Houses() {
   return (
     <article id="houses">
       <section className="mx-auto w-11/12">
-        <h2 className="pt-24 text-center font-cardo text-7.5xl 2xl:pt-32 2xl:text-8.5xl">
+        <h2 className="pt-24 text-center font-cardo text-7xl xl:text-7.5xl 2xl:pt-32 2xl:text-8.5xl">
           The Noble Houses of Westeros
         </h2>
         <section className="mt-6 2xl:mt-10">
@@ -61,7 +61,7 @@ export default function Houses() {
       </section>
       <Link
         href="/houses"
-        className="group relative mt-8 flex h-80 w-screen items-center justify-center bg-black 2xl:mt-10 2xl:h-96"
+        className="group relative mt-8 flex h-72 w-screen items-center justify-center bg-black xl:h-80 2xl:mt-10 2xl:h-96"
       >
         <div
           className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-10 duration-700 group-hover:opacity-7"
@@ -69,7 +69,7 @@ export default function Houses() {
             backgroundImage: `url(${housesBg.src})`,
           }}
         />
-        <h3 className="absolute top-1/4 right-1/2 w-4/6 translate-x-1/2 text-center font-cardo text-7xl opacity-100 duration-500 group-hover:text-orange-600 2xl:text-8xl">
+        <h3 className="absolute top-1/4 right-1/2 w-4/6 translate-x-1/2 text-center font-cardo text-6xl opacity-100 duration-500 group-hover:text-orange-600 xl:text-7xl 2xl:text-8xl">
           Explore The Houses of Westeros
         </h3>
       </Link>
