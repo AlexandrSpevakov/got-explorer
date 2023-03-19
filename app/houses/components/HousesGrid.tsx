@@ -26,8 +26,8 @@ export default function HousesGrid({
     <section
       className={
         searchValue.length >= 1 && filteredHouses.length < 1
-          ? 'mx-auto mt-16'
-          : 'mx-auto mt-16 grid grid-cols-4 gap-y-12 gap-x-10'
+          ? 'mx-auto mt-16 2xl:mt-24'
+          : 'mx-auto mt-16 grid grid-cols-4 gap-y-12 gap-x-8 2xl:mt-24 2xl:gap-y-20 2xl:gap-x-16'
       }
     >
       {filteredHouses.length >= 1 ? (
@@ -35,7 +35,7 @@ export default function HousesGrid({
           <HousesCard key={house.id} house={house} />
         ))
       ) : (
-        <h3 className="my-60 text-center text-5xl">
+        <h3 className="my-60 text-center text-5xl 2xl:my-72 2xl:text-6xl">
           No houses with that name were found...
         </h3>
       )}
