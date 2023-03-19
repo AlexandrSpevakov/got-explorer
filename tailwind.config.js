@@ -15,9 +15,9 @@ module.exports = {
       },
       fontSize: {
         '7.5xl': '5.25rem',
+        '8.5xl': '7rem',
       },
       spacing: {
-        18: '4.5rem',
         '8.5/10': '85%',
       },
       opacity: {

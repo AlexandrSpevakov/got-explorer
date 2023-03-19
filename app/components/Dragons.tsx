@@ -8,14 +8,14 @@ export default function Dragons() {
   return (
     <article id="dragons">
       <section className="mx-auto w-11/12">
-        <h2 className="pt-18 text-center font-cardo text-[84px] 2xl:text-8xl">
+        <h2 className="pt-16 text-center font-cardo text-7.5xl 2xl:pt-20 2xl:text-8.5xl">
           Dragons
         </h2>
-        <section className="mt-8 2xl:mt-12">
+        <section className="mt-8 2xl:mt-10">
           <Image
             src={dragonsImg}
             alt="dragon"
-            className="float-right ml-5 mb-3 w-4/12 rounded-md 2xl:w-2/12"
+            className="float-right ml-5 mb-3 w-4/12 rounded-md 2xl:w-3/12"
           />
           <p className="text-3xl">
             Dragons, the powerful mythical beasts of the world of ice and fire,
@@ -33,13 +33,13 @@ export default function Dragons() {
             also have a strong sense of self-preservation and will flee from
             danger if they feel threatened.
           </p>
-          <p className="mt-8 text-2xl">
+          <p className="mt-8 text-2xl 2xl:text-3xl">
             In the past, dragons were the dominant species of the world of ice
             and fire. They were ridden by the Targaryen family, who conquered
             and ruled over the Seven Kingdoms for many years. However, the last
             known dragons died out many years before the events of the series.
           </p>{' '}
-          <p className="mt-4 text-2xl">
+          <p className="mt-4 text-2xl 2xl:mt-8 2xl:text-3xl">
             While dragons can be tamed and trained, they remain unpredictable
             wild beasts with a dangerous nature. Although their formidable
             abilities can be a great asset in battle, it also poses great risks.
@@ -51,7 +51,7 @@ export default function Dragons() {
       </section>
       <Link
         href="/dragons"
-        className="group relative mt-8 flex h-96 w-screen items-center justify-center bg-black 2xl:mt-44"
+        className="group relative mt-8 flex h-80 w-screen items-center justify-center bg-black 2xl:mt-10 2xl:h-96"
       >
         <div
           className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-30 duration-700 group-hover:opacity-15"

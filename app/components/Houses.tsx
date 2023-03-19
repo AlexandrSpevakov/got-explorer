@@ -8,14 +8,14 @@ export default function Houses() {
   return (
     <article id="houses">
       <section className="mx-auto w-11/12">
-        <h2 className="pt-24 text-center font-cardo text-[84px] 2xl:text-8xl">
+        <h2 className="pt-24 text-center font-cardo text-7.5xl 2xl:pt-32 2xl:text-8.5xl">
           The Noble Houses of Westeros
         </h2>
-        <section className="mt-8 2xl:mt-12">
+        <section className="mt-6 2xl:mt-10">
           <Image
             src={housesImg}
             alt="map"
-            className="float-right ml-5 mb-3 w-4/12 rounded-md 2xl:w-2/12"
+            className="float-right ml-5 mb-3 w-4/12 rounded-md 2xl:mb-10 2xl:w-3/12"
           />
           <p className="text-3xl">
             The Great Houses are the most powerful of the noble houses of the
@@ -33,7 +33,7 @@ export default function Houses() {
             former ruling dynasty, is identified by its three-headed dragon
             sigil and the words &quot;Fire and Blood.&quot;
           </p>
-          <p className="mt-8 text-2xl">
+          <p className="mt-8 text-2xl 2xl:text-3xl">
             Each Great House also has its own distinct history and legacy. House
             Baratheon, for instance, rose to power after the Targaryen Conquest
             when Aegon&quot;s half-brother Orys Baratheon became his closest
@@ -42,7 +42,7 @@ export default function Houses() {
             Targaryens and becoming the first non-Targaryen king to sit on the
             Iron Throne in centuries.
           </p>{' '}
-          <p className="mt-4 text-2xl">
+          <p className="mt-4 text-2xl 2xl:mt-8 2xl:text-3xl">
             While the Great Houses hold immense power, they are not invincible.
             Throughout the history of the Seven Kingdoms, various houses have
             risen and fallen, either through war, political intrigue, or other
@@ -50,7 +50,7 @@ export default function Houses() {
             lost much of its influence after the Red Wedding, a devastating
             massacre orchestrated by House Frey and House Bolton.
           </p>{' '}
-          <p className="mt-4 text-2xl">
+          <p className="mt-4 text-2xl 2xl:mt-8 2xl:text-3xl">
             As the story of the Seven Kingdoms continues to unfold, the fates of
             the Great Houses remain uncertain. New alliances will be formed, old
             enemies will be resurrected, and the balance of power will
@@ -61,7 +61,7 @@ export default function Houses() {
       </section>
       <Link
         href="/houses"
-        className="group relative mt-8 flex h-96 w-screen items-center justify-center bg-black 2xl:mt-44"
+        className="group relative mt-8 flex h-80 w-screen items-center justify-center bg-black 2xl:mt-10 2xl:h-96"
       >
         <div
           className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-10 duration-700 group-hover:opacity-7"
