@@ -62,7 +62,7 @@ export default function Filter({ filterValue, setFilterValue }: FilterProps) {
       <div
         onClick={() => handleDivClick()}
         onKeyDown={(e) => handleDivKeyDown(e)}
-        className="relative z-10 flex cursor-pointer items-center text-3xl 2xl:text-4xl"
+        className="relative z-10 flex cursor-pointer items-center text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl"
         role="button"
         tabIndex={0}
       >
@@ -81,8 +81,8 @@ export default function Filter({ filterValue, setFilterValue }: FilterProps) {
       <ul
         className={
           isOpen
-            ? 'absolute top-12 left-9 w-52 rounded bg-neutral-800 py-2 shadow-lg duration-200 2xl:left-11 2xl:top-14 2xl:w-72'
-            : 'invisible absolute top-0 left-9 w-52 rounded bg-neutral-800 py-2 opacity-0 shadow-lg duration-200 2xl:left-11 2xl:w-72'
+            ? 'absolute top-12 left-3 w-32 rounded bg-neutral-800 py-2 shadow-lg duration-200 sm:w-36 md:left-5 md:w-48 lg:left-7 lg:w-52 xl:left-9 xl:w-56 2xl:left-11 2xl:top-14 2xl:w-72'
+            : 'invisible absolute top-0 left-3 w-32 rounded bg-neutral-800 py-2 opacity-0 shadow-lg duration-200 sm:w-36 md:left-5 md:w-48 lg:left-7 lg:w-52 xl:left-9 xl:w-56 2xl:left-11 2xl:top-14 2xl:w-72'
         }
         aria-hidden={!isOpen}
       >
@@ -90,8 +90,8 @@ export default function Filter({ filterValue, setFilterValue }: FilterProps) {
           <li
             className={
               filterValue === region
-                ? 'flex cursor-pointer items-center justify-between py-2 px-4 text-2xl text-orange-500 duration-200 hover:bg-neutral-900 2xl:py-4 2xl:px-6 2xl:text-3xl'
-                : 'flex cursor-pointer items-center justify-between py-2 px-4 text-2xl duration-200 hover:bg-neutral-900 2xl:py-3 2xl:px-5 2xl:text-3xl'
+                ? 'flex cursor-pointer items-center justify-between py-2 px-4 text-sm text-orange-500 duration-200 hover:bg-neutral-900 sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:py-4 2xl:px-6 2xl:text-3xl'
+                : 'flex cursor-pointer items-center justify-between py-2 px-4 text-sm duration-200 hover:bg-neutral-900 sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:py-3 2xl:px-5 2xl:text-3xl'
             }
             onClick={() => handleLiClick(region)}
             onKeyDown={(e) => handleLiKeyDown(e, region)}
