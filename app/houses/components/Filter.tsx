@@ -62,25 +62,27 @@ export default function Filter({ filterValue, setFilterValue }: FilterProps) {
       <div
         onClick={() => handleDivClick()}
         onKeyDown={(e) => handleDivKeyDown(e)}
-        className="relative z-10 flex cursor-pointer items-center text-3xl"
+        className="relative z-10 flex cursor-pointer items-center text-3xl 2xl:text-4xl"
         role="button"
         tabIndex={0}
       >
         {isOpen ? (
-          <HiChevronDoubleUp className="pt-2 text-4xl text-stone-400" />
+          <HiChevronDoubleUp className="pt-2 text-4xl text-stone-400 2xl:pt-3 2xl:text-5xl" />
         ) : (
-          <HiChevronDoubleDown className="pt-2 text-4xl text-stone-400" />
+          <HiChevronDoubleDown className="pt-2 text-4xl text-stone-400 2xl:pt-3 2xl:text-5xl" />
         )}
-        <span className="mr-3 select-none text-stone-400">Region:</span>
-        <div className="absolute left-full w-44 duration-200 hover:text-orange-500">
+        <span className="mr-3 select-none text-stone-400 2xl:mr-4">
+          Region:
+        </span>
+        <div className="absolute left-full w-44 duration-200 hover:text-orange-500 2xl:w-52">
           {filterValue}
         </div>
       </div>
       <ul
         className={
           isOpen
-            ? 'absolute top-12 left-9 w-52 rounded bg-neutral-800 py-2 shadow-lg duration-200'
-            : 'invisible absolute top-0 left-9 w-52 rounded bg-neutral-800 py-2 opacity-0 shadow-lg duration-200'
+            ? 'absolute top-12 left-9 w-52 rounded bg-neutral-800 py-2 shadow-lg duration-200 2xl:left-11 2xl:top-14 2xl:w-72'
+            : 'invisible absolute top-0 left-9 w-52 rounded bg-neutral-800 py-2 opacity-0 shadow-lg duration-200 2xl:left-11 2xl:w-72'
         }
         aria-hidden={!isOpen}
       >
@@ -88,8 +90,8 @@ export default function Filter({ filterValue, setFilterValue }: FilterProps) {
           <li
             className={
               filterValue === region
-                ? 'flex cursor-pointer items-center justify-between py-2 px-4 text-2xl text-orange-500 duration-200 hover:bg-neutral-900'
-                : 'flex cursor-pointer items-center justify-between py-2 px-4 text-2xl duration-200 hover:bg-neutral-900'
+                ? 'flex cursor-pointer items-center justify-between py-2 px-4 text-2xl text-orange-500 duration-200 hover:bg-neutral-900 2xl:py-4 2xl:px-6 2xl:text-3xl'
+                : 'flex cursor-pointer items-center justify-between py-2 px-4 text-2xl duration-200 hover:bg-neutral-900 2xl:py-3 2xl:px-5 2xl:text-3xl'
             }
             onClick={() => handleLiClick(region)}
             onKeyDown={(e) => handleLiKeyDown(e, region)}
