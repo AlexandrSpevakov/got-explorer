@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
 export default function Footer() {
   return (
     <footer className="w-screen bg-black shadow-xl">
-      <ul className="mx-auto flex w-11/12 justify-around py-20 text-xl">
+      <ul className="mx-auto flex w-11/12 justify-around py-20 text-xl 2xl:py-24 2xl:text-2xl">
         <li>
           <a
             href="mailto:spievakov@gamil.com"
