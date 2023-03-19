@@ -1,3 +1,5 @@
+import { Metadata } from 'next';
+
 import { housesNames } from '@/app/houses/[name]/data/housesNames';
 import { housesBgs } from './data/housesBgs';
 import { IHouse } from '@/app/types/IHouse';
@@ -22,6 +24,27 @@ async function getHouse(id: number) {
   );
   const house = await data.json();
   return house;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { name: string };
+}): Promise<Metadata> {
+  const house: IHouse = await getHouse(housesNames[params.name]);
+  return {
+    title: `GOT | ${house.name}`,
+    description: `Description of the House ${house.name} in of Game of Thrones`,
+    keywords: [
+      `House ${house.name}`,
+      `Noble House ${house.name}`,
+      `Game of Thrones houses of ${house.region}`,
+      `House with ${house.religion} religion in Game of Thrones`,
+      `House wich seats in ${house.seat}`,
+      `House with ${house.words} motto`,
+      `House with ${house.titles} titles`,
+    ],
+  };
 }
 
 export default async function House({ params }: { params: { name: string } }) {
