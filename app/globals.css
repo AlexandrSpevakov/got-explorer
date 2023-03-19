@@ -4,6 +4,6 @@
 
 @media screen and (max-width: 768px) {
   #homeHero {
-    height: calc(100vh - theme(spacing.72));
+    height: calc(100vh - theme(spacing.36));
   }
 }
