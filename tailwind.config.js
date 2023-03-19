@@ -14,6 +14,7 @@ module.exports = {
         tulpen: ['var(--font-tulpen)'],
       },
       fontSize: {
+        '3.5xl': '1.67rem',
         '5.5xl': ['3.75rem', { lineHeight: '4.5rem' }],
         '7.5xl': ['5.25rem', { lineHeight: '6rem' }],
         '8.5xl': '7rem',
