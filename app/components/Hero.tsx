@@ -11,7 +11,7 @@ export default function Hero() {
       }}
       id="homeHero"
     >
-      <h2 className="absolute top-1/4 right-1/2 z-10 w-11/12 translate-x-1/2 text-center font-cardo text-6xl md:w-5/6 md:text-7xl lg:w-4/6 lg:text-7.5xl xl:text-8xl 2xl:w-3/5 2xl:text-8.5xl">
+      <h2 className="absolute top-1/3 right-1/2 z-10 w-11/12 translate-x-1/2 text-center font-cardo text-6xl md:top-1/4 md:w-5/6 md:text-7xl lg:w-4/6 lg:text-7.5xl xl:text-8xl 2xl:w-3/5 2xl:text-8.5xl">
         Explore The World of Ice & Fire
       </h2>
 
