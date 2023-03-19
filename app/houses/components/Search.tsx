@@ -11,7 +11,7 @@ export default function Search({
       value={searchValue}
       onChange={(e) => setSearchValue(e.target.value)}
       placeholder="Search..."
-      className="w-2/6 rounded-md bg-black py-3 px-6 text-2xl focus:outline-none focus:outline-3 focus:outline-orange-600"
+      className="w-2/6 rounded-md bg-black py-3 px-6 text-2xl focus:outline-none focus:outline-3 focus:outline-orange-600 2xl:py-4 2xl:px-7 2xl:text-3xl"
     />
   );
 }
