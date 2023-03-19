@@ -30,6 +30,9 @@ module.exports = {
       gridTemplateColumns: {
         card: '30% 70%',
       },
+      screens: {
+        sm: '576px',
+      },
     },
   },
   plugins: [],

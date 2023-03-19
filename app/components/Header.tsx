@@ -1,3 +1,4 @@
+import Hamburger from './Hamburger';
 import Logo from './Logo';
 import Menu from './Menu';
 
@@ -7,6 +8,7 @@ export default function Header() {
       <nav className="my-3 mx-auto flex w-11/12 items-center justify-between gap-x-20 2xl:my-5">
         <Logo />
         <Menu />
+        <Hamburger />
       </nav>
     </header>
   );
