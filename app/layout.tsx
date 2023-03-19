@@ -21,6 +21,14 @@ const tulpenOne = Tulpen_One({
 export const metadata = {
   title: 'GOT Explorer',
   description: 'Explore the World of Ice and Fire',
+  keywords: [
+    'Game of Thrones, The Song of Ice & Fire',
+    'Game of Thrones glossary',
+    'Game of Thrones Characters',
+    'Game of Thrones Houses',
+    'Game of Thrones Dragons',
+    'Game of Thrones wiki',
+  ],
 };
 
 export default function RootLayout({
