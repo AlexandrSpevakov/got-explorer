@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
 export default function Footer() {
   return (
     <footer className="w-screen bg-black shadow-xl">
-      <ul className="mx-auto flex w-11/12 justify-around py-20 text-xl 2xl:py-24 2xl:text-2xl">
+      <ul className="mx-auto flex w-11/12 justify-around py-12 text-base md:py-20 md:text-xl 2xl:py-24 2xl:text-2xl">
         <li>
           <a
             href="mailto:spievakov@gamil.com"
@@ -20,7 +20,7 @@ export default function Footer() {
             <span>+1 (647) 473-9502 </span>
           </a>
         </li>
-        <li className="flex gap-x-8 text-3xl lg:gap-x-[3.35rem] 2xl:text-4xl">
+        <li className="flex gap-x-8 text-2xl md:text-3xl lg:gap-x-[3.35rem] 2xl:text-4xl">
           <a
             href="https://github.com/AlexandrSpevakov/got-explorer"
             target="_blank"
