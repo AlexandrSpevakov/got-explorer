@@ -27,7 +27,7 @@ export default function HousesGrid({
       className={
         searchValue.length >= 1 && filteredHouses.length < 1
           ? 'mx-auto mt-16 2xl:mt-24'
-          : 'mx-auto mt-16 grid grid-cols-4 gap-y-12 gap-x-8 2xl:mt-24 2xl:gap-y-20 2xl:gap-x-16'
+          : 'mx-auto mt-8 grid grid-cols-4 gap-y-12 gap-x-8 md:mt-10 lg:mt-12 lg:gap-x-5 xl:mt-16 xl:gap-x-8 2xl:mt-24 2xl:gap-y-20 2xl:gap-x-16'
       }
     >
       {filteredHouses.length >= 1 ? (
