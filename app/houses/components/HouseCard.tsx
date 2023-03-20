@@ -39,6 +39,7 @@ export default function HousesCard({ house }: HouseCardProps) {
       <Link
         href={`/houses/${house.name}`}
         className="mx-auto mt-8 block w-fit rounded-md bg-zinc-700 py-2 px-4 text-base duration-300 hover:bg-orange-600 lg:text-lg xl:mt-10 xl:text-xl 2xl:text-2xl"
+        aria-label="Reac more"
       >
         Read More
       </Link>
