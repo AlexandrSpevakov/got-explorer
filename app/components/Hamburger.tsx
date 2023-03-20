@@ -2,12 +2,16 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { KeyboardEvent, useEffect, useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 export default function Hamburger() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const path = usePathname();
+
+  const handleMenuKeyDown = (e: KeyboardEvent<SVGElement>) => {
+    if (e.code === 'Enter') setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
     if (isOpen) {
@@ -25,12 +29,14 @@ export default function Hamburger() {
         <AiOutlineClose
           className="cursor-pointer select-none rounded text-3xl outline-none duration-200 hover:text-orange-600 focus:outline-offset-2 focus:outline-orange-600 md:hidden"
           onClick={() => setIsOpen(!isOpen)}
+          onKeyDown={(e) => handleMenuKeyDown(e)}
           tabIndex={0}
         />
       ) : (
         <AiOutlineMenu
           className="cursor-pointer select-none rounded text-3xl outline-none duration-200 hover:text-orange-600 focus:outline-offset-2 focus:outline-orange-600 md:hidden"
           onClick={() => setIsOpen(!isOpen)}
+          onKeyDown={(e) => handleMenuKeyDown(e)}
           tabIndex={0}
         />
       )}
