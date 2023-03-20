@@ -57,12 +57,14 @@ export default function Filter({ filterValue, setFilterValue }: FilterProps) {
     };
   }, [isOpen]);
 
+  const newLocal =
+    'relative z-10 flex w-fit cursor-pointer items-center text-xl focus:outline-offset-4 focus:outline-orange-600 sm:w-[auto] lg:text-2xl xl:text-3xl 2xl:text-4xl';
   return (
     <section ref={sortRef} className="relative pr-16">
       <div
         onClick={() => handleDivClick()}
         onKeyDown={(e) => handleDivKeyDown(e)}
-        className="relative z-10 flex w-fit cursor-pointer items-center text-xl sm:w-[auto] lg:text-2xl xl:text-3xl 2xl:text-4xl"
+        className={newLocal}
         role="button"
         tabIndex={0}
       >
@@ -90,13 +92,14 @@ export default function Filter({ filterValue, setFilterValue }: FilterProps) {
           <li
             className={
               filterValue === region
-                ? 'flex cursor-pointer items-center justify-between py-1.5 px-3 text-base text-orange-500 duration-200 hover:bg-neutral-900 md:py-2 md:px-4 md:text-lg lg:text-xl xl:text-2xl 2xl:py-4 2xl:px-6 2xl:text-3xl'
-                : 'flex cursor-pointer items-center justify-between py-1.5 px-3 text-base duration-200 hover:bg-neutral-900 md:py-2 md:px-4 md:text-lg lg:text-xl xl:text-2xl 2xl:py-3 2xl:px-5 2xl:text-3xl'
+                ? 'flex cursor-pointer items-center justify-between py-1.5 px-3 text-base text-orange-500 outline-none outline-2 outline-offset-[-2px] duration-200 hover:bg-neutral-900 focus:outline-orange-600 md:py-2 md:px-4 md:text-lg md:outline-3 md:outline-offset-[-3px] lg:text-xl xl:text-2xl 2xl:py-4 2xl:px-6 2xl:text-3xl'
+                : 'flex cursor-pointer items-center justify-between py-1.5 px-3 text-base outline-none outline-2 outline-offset-[-2px] duration-200 hover:bg-neutral-900 focus:outline-orange-600 md:py-2 md:px-4 md:text-lg md:outline-3 md:outline-offset-[-3px] lg:text-xl xl:text-2xl 2xl:py-3 2xl:px-5 2xl:text-3xl'
             }
             onClick={() => handleLiClick(region)}
             onKeyDown={(e) => handleLiKeyDown(e, region)}
             role="option"
             aria-selected={filterValue === region}
+            tabIndex={0}
             key={region}
           >
             {region}
