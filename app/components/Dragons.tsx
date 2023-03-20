@@ -33,7 +33,7 @@ export default function Dragons() {
             also have a strong sense of self-preservation and will flee from
             danger if they feel threatened.
           </p>
-          <p className="mt-4 text-lg sm:text-2xl md:mt-8 md:text-3xl">
+          <p className="mt-8 hidden text-2xl md:block md:text-3xl">
             In the past, dragons were the dominant species of the world of ice
             and fire. They were ridden by the Targaryen family, who conquered
             and ruled over the Seven Kingdoms for many years. However, the last

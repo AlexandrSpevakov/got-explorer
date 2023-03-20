@@ -36,7 +36,7 @@ export default function Characters() {
             far-reaching consequences that shape the destiny of the Seven
             Kingdoms and beyond.
           </p>
-          <p className="mt-4 text-lg sm:text-2xl md:mt-8 2xl:text-3xl">
+          <p className="mt-8 hidden text-2xl md:block 2xl:text-3xl">
             The political intrigue and power struggles in the world of Ice and
             Fire are a constant source of tension and conflict. The Seven
             Kingdoms are constantly vying for power and control, and alliances

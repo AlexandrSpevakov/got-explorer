@@ -33,7 +33,7 @@ export default function Houses() {
             former ruling dynasty, is identified by its three-headed dragon
             sigil and the words &quot;Fire and Blood.&quot;
           </p>
-          <p className="mt-4 text-lg sm:text-2xl md:mt-8 2xl:text-3xl">
+          <p className="mt-8 hidden text-2xl md:block 2xl:text-3xl">
             Each Great House also has its own distinct history and legacy. House
             Baratheon, for instance, rose to power after the Targaryen Conquest
             when Aegon&quot;s half-brother Orys Baratheon became his closest
@@ -42,7 +42,7 @@ export default function Houses() {
             Targaryens and becoming the first non-Targaryen king to sit on the
             Iron Throne in centuries.
           </p>{' '}
-          <p className="mt-4 text-lg sm:text-2xl 2xl:mt-8 2xl:text-3xl">
+          <p className="mt-4 hidden text-2xl md:block 2xl:mt-8 2xl:text-3xl">
             While the Great Houses hold immense power, they are not invincible.
             Throughout the history of the Seven Kingdoms, various houses have
             risen and fallen, either through war, political intrigue, or other
