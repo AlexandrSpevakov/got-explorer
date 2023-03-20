@@ -1,34 +1,41 @@
-import Image from 'next/image';
+import heroBg from '../../public/houses/heroBg.webp';
+import MainContent from './components/MainContent';
+import { ICharacter } from '../types/ICharacter';
+
+// export const metadata = {
+//   title: 'GOT | Houses',
+//   description: 'Information about noble houses in the world of Game of Thrones',
+//   keywords: [
+//     'Noble houses of Westeros descriptions',
+//     'Noble houses of Westeros information',
+//     'Noble houses of Westeros',
+//     'Noble houses in Game of Thrones',
+//     'Noble houses of Game of Thrones descriptions',
+//   ],
+// };
+
+async function getCharacters() {
+  const data = await fetch('https://thronesapi.com/api/v2/Characters');
+  const characters: ICharacter[] = await data.json();
+  return characters;
+}
 
 export default async function Characters() {
-  const characters = await (
-    await fetch('https://thronesapi.com/api/v2/Characters')
-  ).json();
+  const characters = await getCharacters();
 
   return (
     <main>
-      <section className="m-auto w-11/12">
-        <h2 className="pt-32 text-center font-cardo text-8xl">Characters</h2>
-        <section className="mt-28 flex items-center justify-around text-2xl">
-          <input
-            type="text"
-            placeholder="search..."
-            className="w-1/4 rounded-md bg-black py-2 px-4 "
-          />
-          <span>Sort by</span>
-        </section>
-        <section className="flex flex-wrap">
-          {characters.map((character: any) => (
-            <span key={character.id}>characher</span>
-            // <Image
-            //   src={character.imageUrl}
-            //   alt={character.fullName}
-            //   key={character.id}
-            //   width={250}
-            //   height={150}
-            // />
-          ))}
-        </section>
+      <section className="m-auto mb-32 w-11/12">
+        <div
+          className="absolute top-0 left-0 z-[-1] h-screen w-screen bg-cover bg-center bg-no-repeat opacity-5"
+          style={{
+            backgroundImage: `url(${heroBg.src})`,
+          }}
+        />
+        <h2 className="pt-32 text-center font-cardo text-5xl sm:text-6xl md:text-7xl lg:pt-40 lg:text-8xl xl:text-9xl 2xl:pt-52">
+          Characters
+        </h2>
+        <MainContent characters={characters} />
       </section>
     </main>
   );

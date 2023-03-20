@@ -1,4 +1,5 @@
 import heroBg from '../../public/houses/heroBg.webp';
+import { IHouse } from '../types/IHouse';
 import MainContent from './components/MainContent';
 
 export const metadata = {
@@ -17,12 +18,12 @@ async function getHouses() {
   const data = await fetch(
     'https://6344adb1dcae733e8fe3067a.mockapi.io/houses',
   );
-  const houses = await data.json();
+  const houses: IHouse[] = await data.json();
   return houses;
 }
 
 export default async function Houses() {
-  const houses = await getHouses();
+  const houses: IHouse[] = await getHouses();
 
   return (
     <main>
