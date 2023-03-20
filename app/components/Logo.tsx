@@ -5,7 +5,10 @@ import logo from '../../public/home/logo.webp';
 
 export default function Logo() {
   return (
-    <Link href="/" className="flex w-fit items-center">
+    <Link
+      href="/"
+      className="flex w-fit items-center rounded outline-none focus:outline-offset-4 focus:outline-orange-600"
+    >
       <Image
         src={logo}
         alt="Logo"
