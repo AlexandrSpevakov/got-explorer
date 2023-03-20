@@ -23,13 +23,15 @@ export default function Hamburger() {
     <>
       {isOpen ? (
         <AiOutlineClose
-          className="cursor-pointer select-none text-3xl duration-200 hover:text-orange-600 md:hidden"
+          className="cursor-pointer select-none rounded text-3xl outline-none duration-200 hover:text-orange-600 focus:outline-offset-2 focus:outline-orange-600 md:hidden"
           onClick={() => setIsOpen(!isOpen)}
+          tabIndex={0}
         />
       ) : (
         <AiOutlineMenu
-          className="cursor-pointer select-none text-3xl duration-200 hover:text-orange-600 md:hidden"
+          className="cursor-pointer select-none rounded text-3xl outline-none duration-200 hover:text-orange-600 focus:outline-offset-2 focus:outline-orange-600 md:hidden"
           onClick={() => setIsOpen(!isOpen)}
+          tabIndex={0}
         />
       )}
       {isOpen && (
@@ -42,7 +44,7 @@ export default function Hamburger() {
             >
               <Link
                 href="/"
-                className={`block w-full py-6 pl-12 duration-200 ${
+                className={`block w-full py-6 pl-12 outline-none duration-200 focus:outline-4 focus:outline-offset-0 focus:outline-orange-600 ${
                   path === '/'
                     ? 'text-orange-600'
                     : 'group-hover:text-orange-600'
@@ -61,7 +63,7 @@ export default function Hamburger() {
             >
               <Link
                 href="/houses"
-                className={`block py-6 pl-12 duration-200 ${
+                className={`block py-6 pl-12 outline-none duration-200 focus:outline-4 focus:outline-offset-0 focus:outline-orange-600 ${
                   path === '/houses'
                     ? 'text-orange-600'
                     : 'group-hover:text-orange-600'
@@ -80,7 +82,7 @@ export default function Hamburger() {
             >
               <Link
                 href="/characters"
-                className={`block py-6 pl-12 duration-200 ${
+                className={`block py-6 pl-12 outline-none duration-200 focus:outline-4 focus:outline-offset-0 focus:outline-orange-600 ${
                   path === '/characters'
                     ? 'text-orange-600'
                     : 'group-hover:text-orange-600'
@@ -99,7 +101,7 @@ export default function Hamburger() {
             >
               <Link
                 href="/dragons"
-                className={`block py-6 pl-12 duration-200 ${
+                className={`block py-6 pl-12 outline-none duration-200 focus:outline-4 focus:outline-offset-0 focus:outline-orange-600 ${
                   path === '/dragons'
                     ? 'text-orange-600'
                     : 'group-hover:text-orange-600'
