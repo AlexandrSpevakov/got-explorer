@@ -14,7 +14,7 @@ export default function Card({
   titles,
 }: CardProps) {
   return (
-    <section className="mx-auto mt-4 grid grid-cols-card items-center justify-items-center gap-y-4 rounded-md bg-black/40 py-2 px-6 text-center text-lg sm:mt-8 sm:w-8.5/10 sm:gap-y-6 sm:py-6 sm:px-8 sm:text-xl md:w-4/6 md:px-10 lg:mt-10 lg:gap-y-8 lg:py-8 lg:px-12 lg:text-2xl xl:mt-12 xl:gap-y-10 xl:py-10 xl:px-14 xl:text-3xl 2xl:mt-14 2xl:text-4xl">
+    <section className="mx-auto mt-8 grid w-full grid-cols-card items-center justify-items-center gap-y-6 rounded-md bg-black/40 py-6 px-8 text-center text-xl sm:w-8.5/10 sm:text-xl md:w-4/6 md:px-10 lg:mt-10 lg:gap-y-8 lg:py-8 lg:px-12 lg:text-2xl xl:mt-12 xl:gap-y-10 xl:py-10 xl:px-14 xl:text-3xl 2xl:mt-14 2xl:text-4xl">
       <div className="flex w-full border-b-4 border-stone-600 pb-1 text-zinc-400 sm:pb-2 lg:pb-4">
         <span className="">Seat</span>
       </div>

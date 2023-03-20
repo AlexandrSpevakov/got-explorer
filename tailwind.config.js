@@ -35,6 +35,7 @@ module.exports = {
         card: '30% 70%',
       },
       screens: {
+        xs: '400px',
         sm: '576px',
       },
     },
