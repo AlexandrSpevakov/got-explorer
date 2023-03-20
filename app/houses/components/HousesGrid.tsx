@@ -35,7 +35,7 @@ export default function HousesGrid({
           <HousesCard key={house.id} house={house} />
         ))
       ) : (
-        <h3 className="my-60 text-center text-5xl 2xl:my-72 2xl:text-6xl">
+        <h3 className="mt-16 mb-8 text-center text-xl sm:my-24 sm:text-2xl md:my-36 md:text-3xl lg:my-48 lg:text-4xl xl:my-60 xl:text-5xl 2xl:my-72 2xl:text-6xl">
           No houses with that name were found...
         </h3>
       )}
