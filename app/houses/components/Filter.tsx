@@ -67,11 +67,11 @@ export default function Filter({ filterValue, setFilterValue }: FilterProps) {
         tabIndex={0}
       >
         {isOpen ? (
-          <HiChevronDoubleUp className="pt-2 text-4xl text-stone-400 2xl:pt-3 2xl:text-5xl" />
+          <HiChevronDoubleUp className="pt-2 text-2xl text-stone-400 md:text-3xl lg:text-4xl 2xl:pt-3 2xl:text-5xl" />
         ) : (
-          <HiChevronDoubleDown className="pt-2 text-4xl text-stone-400 2xl:pt-3 2xl:text-5xl" />
+          <HiChevronDoubleDown className="pt-2 text-2xl text-stone-400 md:text-3xl lg:text-4xl 2xl:pt-3 2xl:text-5xl" />
         )}
-        <span className="mr-3 select-none text-stone-400 2xl:mr-4">
+        <span className=" mr-1 select-none text-stone-400 sm:mr-1.5 md:mr-2 lg:mr-3 2xl:mr-4">
           Region:
         </span>
         <div className="absolute left-full w-44 duration-200 hover:text-orange-500 2xl:w-52">
@@ -81,8 +81,8 @@ export default function Filter({ filterValue, setFilterValue }: FilterProps) {
       <ul
         className={
           isOpen
-            ? 'absolute top-12 left-3 w-32 rounded bg-neutral-800 py-2 shadow-lg duration-200 sm:w-36 md:left-5 md:w-48 lg:left-7 lg:w-52 xl:left-9 xl:w-56 2xl:left-11 2xl:top-14 2xl:w-72'
-            : 'invisible absolute top-0 left-3 w-32 rounded bg-neutral-800 py-2 opacity-0 shadow-lg duration-200 sm:w-36 md:left-5 md:w-48 lg:left-7 lg:w-52 xl:left-9 xl:w-56 2xl:left-11 2xl:top-14 2xl:w-72'
+            ? 'absolute top-6 left-3 w-32 rounded bg-neutral-800 py-2 shadow-lg duration-200 sm:top-8 sm:w-36 md:top-10 md:left-6 md:w-48 lg:top-12 lg:left-7 lg:w-52 xl:left-9 xl:w-56 2xl:left-11 2xl:top-14 2xl:w-72'
+            : 'invisible absolute top-0 left-3 w-32 rounded bg-neutral-800 py-2 opacity-0 shadow-lg duration-200 sm:w-36 md:left-6 md:w-48 lg:left-7 lg:w-52 xl:left-9 xl:w-56 2xl:left-11 2xl:top-14 2xl:w-72'
         }
         aria-hidden={!isOpen}
       >
