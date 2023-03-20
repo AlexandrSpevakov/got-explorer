@@ -12,12 +12,12 @@ export default function HousesCard({ house }: HouseCardProps) {
   return (
     <div
       key={house.id}
-      className="w-64 rounded-md bg-black px-6 py-5 sm:py-6 sm:px-8 md:p-6 lg:p-4 lg:py-6 xl:p-8 2xl:p-10"
+      className="w-64 rounded-md bg-black px-6 py-5 xs:w-72 sm:w-full sm:py-6 sm:px-8 md:p-6 lg:p-4 lg:py-6 xl:p-8 2xl:p-10"
     >
       <Image
         src={housesImages[+house.id - 1]}
         alt={house.name}
-        className="m-auto mb-3 h-24 w-auto md:mb-4 md:h-28 lg:mb-6 lg:h-32 xl:mb-10 xl:h-44 2xl:h-52"
+        className="m-auto mb-3 h-24 w-auto xs:h-28 sm:h-24 md:mb-4 md:h-28 lg:mb-6 lg:h-32 xl:mb-10 xl:h-44 2xl:h-52"
       />
 
       <h3 className="block pb-3 text-center text-lg md:text-lg lg:text-xl xl:pb-4 xl:text-2xl 2xl:pb-5 2xl:text-3xl">
