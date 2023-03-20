@@ -14,7 +14,7 @@ export default function Card({
   titles,
 }: CardProps) {
   return (
-    <section className="mx-auto mt-6 grid w-4/6 grid-cols-card items-center justify-items-center gap-y-10 rounded-md bg-black/40 py-10 px-14 text-center text-base sm:mt-8 sm:text-lg md:mt-10 md:text-xl lg:mt-12 lg:text-2xl xl:mt-14 xl:text-3xl 2xl:mt-16 2xl:text-4xl">
+    <section className="mx-auto mt-4 grid w-4/6 grid-cols-card items-center justify-items-center gap-y-4 rounded-md bg-black/40 py-2 px-6 text-center text-base sm:mt-6 sm:py-4 sm:px-8 sm:text-lg md:mt-8 md:gap-y-6 md:py-6 md:px-10 md:text-xl lg:mt-10 lg:gap-y-8 lg:py-8 lg:px-12 lg:text-2xl xl:mt-12 xl:gap-y-10 xl:py-10 xl:px-14 xl:text-3xl 2xl:mt-14 2xl:text-4xl">
       <div className="flex w-full border-b-4 border-stone-600 pb-4 text-zinc-400">
         <span className="">Seat</span>
       </div>
@@ -40,7 +40,7 @@ export default function Card({
           {titles.length > 2 ? 'Titles' : 'Title'}
         </span>
       </div>
-      <div className="flex w-full flex-col text-3xl">
+      <div className="flex w-full flex-col text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
         {titles.map((title, i) => (
           <span key={i}>{title}</span>
         ))}
