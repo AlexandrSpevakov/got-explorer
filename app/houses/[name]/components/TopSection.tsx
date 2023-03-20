@@ -16,7 +16,7 @@ export default function TopSection({ houseName, id }: TopSectionProps) {
       <Image
         src={housesImages[+id - 1]}
         alt={houseName}
-        className="mx-auto mt-8 h-5.5/10 w-auto sm:h-3/5 md:mt-6 md:h-4/6 lg:mt-8 xl:mt-10 xl:h-3/5 2xl:mt-14"
+        className="mx-auto mt-12 h-4.5/10 w-auto xs:mt-8 xs:h-5.5/10 sm:h-3/5 md:mt-6 md:h-4/6 lg:mt-8 xl:mt-10 xl:h-3/5 2xl:mt-14"
       />
     </section>
   );

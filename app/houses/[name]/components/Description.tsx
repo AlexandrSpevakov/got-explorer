@@ -6,8 +6,8 @@ interface DescriptionProps {
 
 export default function Description({ description }: DescriptionProps) {
   return (
-    <section className="mx-auto mt-12 w-11/12 sm:mt-14 md:mt-16 lg:mt-20 lg:w-10/12 xl:mt-24 2xl:mt-28">
-      <h3 className="mb-4 text-center text-5xl sm:mb-3 md:mb-2 lg:mb-3 lg:text-6xl xl:mb-4 xl:text-7xl 2xl:mb-5 2xl:text-8xl">
+    <section className="mx-auto mt-10 w-11/12 xs:mt-12 sm:mt-14 md:mt-16 lg:mt-20 lg:w-10/12 xl:mt-24 2xl:mt-28">
+      <h3 className="mb-2 text-center text-[2.6rem] xs:text-5xl sm:mb-3 md:mb-2 lg:mb-3 lg:text-6xl xl:mb-4 xl:text-7xl 2xl:mb-5 2xl:text-8xl">
         Description
       </h3>
       {description.map((par, i) => (
