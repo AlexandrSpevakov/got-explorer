@@ -12,7 +12,7 @@ export default function HousesCard({ house }: HouseCardProps) {
   return (
     <div
       key={house.id}
-      className="w-full rounded-md bg-black px-6 py-5 sm:py-6 sm:px-8 md:p-6 lg:p-4 lg:py-6 xl:p-8 2xl:p-10"
+      className="w-64 rounded-md bg-black px-6 py-5 sm:py-6 sm:px-8 md:p-6 lg:p-4 lg:py-6 xl:p-8 2xl:p-10"
     >
       <Image
         src={housesImages[+house.id - 1]}

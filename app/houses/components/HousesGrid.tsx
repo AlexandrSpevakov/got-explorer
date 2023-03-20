@@ -27,7 +27,7 @@ export default function HousesGrid({
       className={
         searchValue.length >= 1 && filteredHouses.length < 1
           ? 'mx-auto mt-16 2xl:mt-24'
-          : 'mx-auto mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 md:mt-10  md:grid-cols-3 md:gap-y-12 md:gap-x-7 lg:mt-12 lg:grid-cols-4 lg:gap-x-5 xl:mt-16 xl:gap-x-8 2xl:mt-24 2xl:gap-y-20 2xl:gap-x-16'
+          : 'mx-auto mt-10 grid grid-cols-1 justify-items-center gap-8 sm:mt-8 sm:grid-cols-2 sm:px-0 md:mt-10 md:grid-cols-3 md:gap-y-12 md:gap-x-7 lg:mt-12 lg:grid-cols-4 lg:gap-x-5 xl:mt-16 xl:gap-x-8 2xl:mt-24 2xl:gap-y-20 2xl:gap-x-16'
       }
     >
       {filteredHouses.length >= 1 ? (
