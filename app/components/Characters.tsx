@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import charactersImg from '../../public/home/charactersImg.webp';
-import charactersBg from '../../public/home/charactersBg.jpeg';
+import charactersBg from '../../public/home/charactersBg.webp';
 
 export default function Characters() {
   return (

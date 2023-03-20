@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import housesImg from '../../public/home/housesImg.jpeg';
-import housesBg from '../../public/home/housesBg.jpeg';
+import housesImg from '../../public/home/housesImg.webp';
+import housesBg from '../../public/home/housesBg.webp';
 
 export default function Houses() {
   return (
