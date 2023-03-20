@@ -33,7 +33,7 @@ export default async function Houses() {
             backgroundImage: `url(${heroBg.src})`,
           }}
         />
-        <h2 className="pt-40 text-center font-cardo text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:pt-52">
+        <h2 className="pt-28 text-center font-cardo text-5xl sm:text-6xl md:pt-32 md:text-7xl lg:pt-40 lg:text-8xl xl:text-9xl 2xl:pt-52">
           Houses
         </h2>
         <MainContent houses={houses} />
