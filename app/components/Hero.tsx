@@ -17,7 +17,7 @@ export default function Hero() {
 
       <a
         href="#houses"
-        className="absolute top-8.5/10 right-1/2 z-10 translate-x-1/2 text-center text-5xl duration-300 hover:text-orange-600 sm:top-8/10 sm:text-6xl md:top-8.5/10 md:text-7xl 2xl:text-7.5xl"
+        className="absolute top-8.5/10 right-1/2 z-10 translate-x-1/2 text-center text-5xl outline-none duration-300 hover:text-orange-600 focus:outline-4 focus:outline-offset-2 focus:outline-orange-600 sm:top-8/10 sm:text-6xl md:top-8.5/10 md:text-7xl 2xl:text-7.5xl"
         aria-label="Scroll Down"
       >
         <TbArrowDownRhombus />
