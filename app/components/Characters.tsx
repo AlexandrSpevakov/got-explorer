@@ -55,7 +55,7 @@ export default function Characters() {
       </section>
       <Link
         href="/characters"
-        className="group relative mt-4 flex h-36 w-screen items-center justify-center bg-black sm:mt-8 sm:h-60 md:h-72 xl:h-80 2xl:mt-10 2xl:h-96"
+        className="group relative mt-4 flex h-36 w-screen items-center justify-center bg-black outline-none focus:outline-4 focus:outline-offset-0 focus:outline-orange-600 sm:mt-8 sm:h-60 md:h-72 xl:h-80 2xl:mt-10 2xl:h-96"
       >
         <div
           className="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-15 duration-700 group-hover:opacity-10"
