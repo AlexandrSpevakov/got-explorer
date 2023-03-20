@@ -26,6 +26,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             className="duration-300 hover:text-orange-600"
+            aria-label="Github link"
           >
             <BsGithub />
           </a>
@@ -34,6 +35,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             className="duration-300 hover:text-orange-600"
+            aria-label="Linkedin link"
           >
             <BsLinkedin />
           </a>
@@ -42,6 +44,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             className="duration-300 hover:text-orange-600"
+            aria-label="Instagram link"
           >
             <BsInstagram />
           </a>
