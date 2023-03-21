@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import HousesGrid from './CharactersGrid';
+import CharactersGrid from './CharactersGrid';
 import Search from './Search';
 import Filter from './Filter';
 import { ICharacter } from '@/app/types/ICharacter';
@@ -21,7 +21,7 @@ export default function MainContent({
         <Search searchValue={searchValue} setSearchValue={setSearchValue} />
         <Filter filterValue={filterValue} setFilterValue={setFilterValue} />
       </section>
-      <HousesGrid
+      <CharactersGrid
         characters={characters}
         searchValue={searchValue}
         filterValue={filterValue}

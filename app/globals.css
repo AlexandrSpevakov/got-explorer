@@ -7,3 +7,7 @@
     height: calc(100vh - theme(spacing.36));
   }
 }
+
+.characters-grid {
+  grid-template-columns: repeat(4, 270px);
+}
