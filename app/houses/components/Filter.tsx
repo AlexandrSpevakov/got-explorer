@@ -73,13 +73,16 @@ export default function Filter({ filterValue, setFilterValue }: FilterProps) {
         ) : (
           <HiChevronDoubleDown className="pt-1.5 text-2xl text-stone-400 md:pt-2 md:text-3xl lg:text-4xl 2xl:pt-3 2xl:text-5xl" />
         )}
+
         <span className=" mr-2 select-none text-stone-400 lg:mr-3 2xl:mr-4">
           Region:
         </span>
+
         <div className="absolute left-full w-44 duration-200 hover:text-orange-500 2xl:w-52">
           {filterValue}
         </div>
       </div>
+
       <ul
         className={
           isOpen
