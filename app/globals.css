@@ -17,6 +17,7 @@
     grid-template-columns: repeat(4, 220px);
   }
 }
+
 @media screen and (max-width: 1024px) {
   .characters-grid {
     grid-template-columns: repeat(3, 210px);
@@ -26,5 +27,9 @@
 @media screen and (max-width: 768px) {
   #homeHero {
     height: calc(100vh - theme(spacing.36));
+  }
+
+  .characters-grid {
+    grid-template-columns: repeat(2, 190px);
   }
 }
