@@ -4,23 +4,16 @@ import CharacterCard from './CharacterCard';
 interface CharactersGridProps {
   characters: ICharacter[];
   searchValue: string;
-  filterValue: string;
 }
 
 export default function CharactersGrid({
   characters,
   searchValue,
-  filterValue,
 }: CharactersGridProps) {
-  const filteredCharactersBySearch = characters.filter((house: ICharacter) =>
+  const filteredCharacters = characters.filter((house: ICharacter) =>
     `house ${house.fullName.toLowerCase()}`.includes(
       searchValue.trim().toLowerCase(),
     ),
-  );
-
-  const filteredCharacters = filteredCharactersBySearch.filter(
-    (character: ICharacter) =>
-      filterValue === 'All' ? true : filterValue === character.family,
   );
 
   return (

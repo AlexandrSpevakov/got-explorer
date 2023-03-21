@@ -8,6 +8,7 @@ interface CharacterCardProps {
 
 export default function CharacterCard({ character }: CharacterCardProps) {
   const title = character.title.split(',')[0];
+  const pageName = character.fullName.split(' ').join('_');
 
   return (
     <div key={character.id} className="rounded-sm bg-black">
@@ -37,7 +38,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
       </div>
 
       <Link
-        href={`/houses/${character.fullName}`}
+        href={`/characters/${pageName}`}
         className="mx-auto my-6 block w-fit rounded-md bg-zinc-700 py-2 px-4 outline-none outline-3 duration-300 hover:bg-orange-600 focus:outline-offset-0 focus:outline-orange-600 sm:text-sm md:my-7 lg:text-lg xl:mt-10 xl:text-xl 2xl:text-2xl"
       >
         View More
