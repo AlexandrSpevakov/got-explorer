@@ -18,11 +18,11 @@ export default function CharacterCard({ character }: CharacterCardProps) {
         }}
       />
 
-      <h3 className="block pb-3 text-center text-lg md:text-base lg:text-lg xl:pb-4 xl:text-2xl 2xl:pb-5 2xl:text-3xl">
+      <h3 className="block pb-3 text-center text-lg md:text-lg lg:text-xl xl:pb-4 xl:text-2xl 2xl:pb-5 2xl:text-3xl">
         {character.fullName}
       </h3>
 
-      <div className="flex border-t-[3px] border-stone-600 p-3 text-base sm:h-16 md:h-16 md:border-t-4 lg:h-20 lg:text-base xl:h-24 xl:py-4 xl:text-xl 2xl:h-28 2xl:py-5 2xl:text-2xl">
+      <div className="flex border-t-[3px] border-stone-600 p-3 text-base sm:h-16 md:h-20 md:border-t-4 lg:text-base xl:h-24 xl:py-4 xl:text-xl 2xl:h-28 2xl:py-5 2xl:text-2xl">
         <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3 xl:mr-4">
           Title:
         </span>
