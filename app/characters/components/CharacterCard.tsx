@@ -23,14 +23,14 @@ export default function CharacterCard({ character }: CharacterCardProps) {
       </h3>
 
       <div className="flex h-[70px] border-t-[3px] border-stone-600 p-3 sm:text-sm md:h-20 md:border-t-4 lg:text-base xl:h-24 xl:py-4 xl:text-xl 2xl:h-28 2xl:py-5 2xl:text-2xl">
-        <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3 xl:mr-4">
+        <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3 xl:mr-3">
           Title:
         </span>
         <span className="">{title}</span>
       </div>
 
       <div className="flex border-y-[3px] border-stone-600 p-3 sm:text-sm md:border-y-4 lg:text-base xl:py-4 xl:text-xl 2xl:py-5 2xl:text-2xl">
-        <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3 xl:mr-4">
+        <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3 xl:mr-3">
           Family:
         </span>
         <span className="">{character.family}</span>
