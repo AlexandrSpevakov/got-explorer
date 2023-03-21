@@ -28,7 +28,7 @@ export default function CharactersGrid({
       className={
         searchValue.length >= 1 && filteredCharacters.length < 1
           ? 'mx-auto mt-16 2xl:mt-24'
-          : 'characters-grid mx-auto mt-10 grid justify-center gap-8 sm:mt-8 sm:px-0 md:mt-10 md:gap-y-12 md:gap-x-7 lg:mt-12 lg:gap-x-5 xl:mt-16 xl:gap-x-14 2xl:mt-24 2xl:gap-y-20 2xl:gap-x-16'
+          : 'characters-grid mx-auto mt-10 grid justify-center gap-8 sm:mt-8 sm:px-0 md:mt-10 md:gap-y-12 md:gap-x-7 lg:mt-12 lg:gap-x-5 xl:mt-16 xl:gap-x-14 2xl:mt-24 2xl:gap-10'
       }
     >
       {filteredCharacters.length >= 1 ? (

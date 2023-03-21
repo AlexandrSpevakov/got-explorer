@@ -9,5 +9,5 @@
 }
 
 .characters-grid {
-  grid-template-columns: repeat(4, 270px);
+  grid-template-columns: repeat(4, 320px);
 }
