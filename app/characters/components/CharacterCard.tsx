@@ -7,6 +7,8 @@ interface CharacterCardProps {
 }
 
 export default function CharacterCard({ character }: CharacterCardProps) {
+  const title = character.title.split(',')[0];
+
   return (
     <div key={character.id} className="rounded-sm bg-black">
       <div
@@ -16,17 +18,21 @@ export default function CharacterCard({ character }: CharacterCardProps) {
         }}
       />
 
-      <h3 className="block pb-3 text-center text-lg md:text-lg lg:text-xl xl:pb-4 xl:text-2xl 2xl:pb-5 2xl:text-3xl">
+      <h3 className="block pb-3 text-center text-lg md:text-base lg:text-lg xl:pb-4 xl:text-2xl 2xl:pb-5 2xl:text-3xl">
         {character.fullName}
       </h3>
 
-      <div className="flex h-16 border-t-[3px] border-stone-600 p-3 text-base sm:h-20 md:h-24 md:border-t-4 lg:h-28 lg:text-lg xl:h-32 xl:py-4 xl:text-xl 2xl:h-36 2xl:py-5 2xl:text-2xl">
-        <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3">Title:</span>
-        <span className="">{character.title}</span>
+      <div className="flex border-t-[3px] border-stone-600 p-3 text-base sm:h-16 md:h-16 md:border-t-4 lg:h-20 lg:text-base xl:h-24 xl:py-4 xl:text-xl 2xl:h-28 2xl:py-5 2xl:text-2xl">
+        <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3 xl:mr-4">
+          Title:
+        </span>
+        <span className="">{title}</span>
       </div>
 
-      <div className="flex border-y-[3px] border-stone-600 p-3 text-base md:border-y-4 lg:text-lg xl:py-4 xl:text-xl 2xl:py-5 2xl:text-2xl">
-        <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3">Family:</span>
+      <div className="flex border-y-[3px] border-stone-600 p-3 text-base md:border-y-4 lg:text-base xl:py-4 xl:text-xl 2xl:py-5 2xl:text-2xl">
+        <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3 xl:mr-4">
+          Family:
+        </span>
         <span className="">{character.family}</span>
       </div>
 

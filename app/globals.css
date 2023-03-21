@@ -17,3 +17,9 @@
     grid-template-columns: repeat(4, 260px);
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .characters-grid {
+    grid-template-columns: repeat(4, 210px);
+  }
+}
