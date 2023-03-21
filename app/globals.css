@@ -33,3 +33,9 @@
     grid-template-columns: repeat(2, 190px);
   }
 }
+
+@media screen and (max-width: 576px) {
+  .characters-grid {
+    grid-template-columns: repeat(1, 220px);
+  }
+}

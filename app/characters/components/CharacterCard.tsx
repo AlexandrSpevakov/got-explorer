@@ -12,7 +12,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
   return (
     <div key={character.id} className="rounded-sm bg-black">
       <div
-        className="mx-auto mb-6 w-full rounded-t-sm bg-cover bg-center bg-no-repeat sm:h-56 md:h-64 lg:h-72 xl:h-80 2xl:h-96"
+        className="mx-auto mb-6 h-64 w-full rounded-t-sm bg-cover bg-center bg-no-repeat sm:h-56 md:h-64 lg:h-72 xl:h-80 2xl:h-96"
         style={{
           backgroundImage: `url(${character.imageUrl})`,
         }}
@@ -22,7 +22,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
         {character.fullName}
       </h3>
 
-      <div className="flex border-t-[3px] border-stone-600 p-3 sm:h-[70px] sm:text-sm md:h-20 md:border-t-4 lg:text-base xl:h-24 xl:py-4 xl:text-xl 2xl:h-28 2xl:py-5 2xl:text-2xl">
+      <div className="flex h-16 border-t-[3px] border-stone-600 p-3 sm:h-[70px] sm:text-sm md:h-20 md:border-t-4 lg:text-base xl:h-24 xl:py-4 xl:text-xl 2xl:h-28 2xl:py-5 2xl:text-2xl">
         <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3 xl:mr-4">
           Title:
         </span>
@@ -38,7 +38,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
 
       <Link
         href={`/houses/${character.fullName}`}
-        className="mx-auto block w-fit rounded-md bg-zinc-700 py-2 px-4 outline-none outline-3 duration-300 hover:bg-orange-600 focus:outline-offset-0 focus:outline-orange-600 sm:my-6 sm:text-sm md:my-7 lg:text-lg xl:mt-10 xl:text-xl 2xl:text-2xl"
+        className="mx-auto my-6 block w-fit rounded-md bg-zinc-700 py-2 px-4 outline-none outline-3 duration-300 hover:bg-orange-600 focus:outline-offset-0 focus:outline-orange-600 sm:text-sm md:my-7 lg:text-lg xl:mt-10 xl:text-xl 2xl:text-2xl"
       >
         View More
       </Link>
