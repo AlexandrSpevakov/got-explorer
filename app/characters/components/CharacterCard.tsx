@@ -10,7 +10,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
   return (
     <div key={character.id} className="rounded-sm bg-black">
       <div
-        className="mx-auto mb-6 h-80 w-full rounded-t-sm bg-cover bg-center bg-no-repeat 2xl:h-[380px]"
+        className="mx-auto mb-6 w-full rounded-t-sm bg-cover bg-center bg-no-repeat sm:h-56 md:h-64 lg:h-72 xl:h-80 2xl:h-96"
         style={{
           backgroundImage: `url(${character.imageUrl})`,
         }}
@@ -20,7 +20,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
         {character.fullName}
       </h3>
 
-      <div className="flex h-[120px] border-t-[3px] border-stone-600 p-3 text-base md:border-t-4 lg:text-lg xl:py-4 xl:text-xl 2xl:h-36 2xl:py-5 2xl:text-2xl">
+      <div className="flex h-16 border-t-[3px] border-stone-600 p-3 text-base sm:h-20 md:h-24 md:border-t-4 lg:h-28 lg:text-lg xl:h-32 xl:py-4 xl:text-xl 2xl:h-36 2xl:py-5 2xl:text-2xl">
         <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3">Title:</span>
         <span className="">{character.title}</span>
       </div>
