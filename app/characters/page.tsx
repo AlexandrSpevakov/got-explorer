@@ -1,4 +1,4 @@
-import heroBg from '../../public/houses/heroBg.webp';
+import heroBg from '../../public/characters/heroBg.webp';
 import MainContent from './components/MainContent';
 import { ICharacter } from '../types/ICharacter';
 
