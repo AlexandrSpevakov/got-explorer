@@ -2,17 +2,16 @@ import heroBg from '../../public/characters/heroBg.webp';
 import MainContent from './components/MainContent';
 import { ICharacter } from '../types/ICharacter';
 
-// export const metadata = {
-//   title: 'GOT | Houses',
-//   description: 'Information about noble houses in the world of Game of Thrones',
-//   keywords: [
-//     'Noble houses of Westeros descriptions',
-//     'Noble houses of Westeros information',
-//     'Noble houses of Westeros',
-//     'Noble houses in Game of Thrones',
-//     'Noble houses of Game of Thrones descriptions',
-//   ],
-// };
+export const metadata = {
+  title: 'GOT | Characters',
+  description: 'Information about characters in the world of Game of Thrones',
+  keywords: [
+    'Characters in Game of Thrones',
+    'Characters of Game of Thrones descriptions',
+    'Characters of the world of ice and fire',
+    'Characters of Westeros',
+  ],
+};
 
 async function getCharacters() {
   const data = await fetch('https://thronesapi.com/api/v2/Characters');
