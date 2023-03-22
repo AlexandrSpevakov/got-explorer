@@ -12,7 +12,11 @@ export async function generateStaticParams() {
   const characters = await data.json();
 
   return characters.map((character: ICharacter) => ({
-    name: character.fullName,
+    name:
+      character.fullName !== 'Jamie Lannister'
+        ? character.fullName.split(' ').join('_')
+        : 'Jaime_Lannister',
+    // name: character.fullName.split(' ').join('_'),
   }));
 }
 
