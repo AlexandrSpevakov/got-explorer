@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 1536px) {
   .characters-grid {
-    grid-template-columns: repeat(4, 260px);
+    grid-template-columns: repeat(4, 265px);
   }
 }
 

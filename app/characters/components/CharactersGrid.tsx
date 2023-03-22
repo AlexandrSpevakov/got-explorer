@@ -3,17 +3,21 @@ import CharacterCard from './CharacterCard';
 
 interface CharactersGridProps {
   characters: ICharacter[];
+  nameValue: string;
+  titleValue: string;
   searchValue: string;
 }
 
 export default function CharactersGrid({
   characters,
+  nameValue,
+  titleValue,
   searchValue,
 }: CharactersGridProps) {
   const filteredCharacters = characters.filter((house: ICharacter) =>
-    `house ${house.fullName.toLowerCase()}`.includes(
-      searchValue.trim().toLowerCase(),
-    ),
+    searchValue === 'name'
+      ? house.fullName.toLowerCase().includes(nameValue.trim().toLowerCase())
+      : house.title.toLowerCase().includes(titleValue.trim().toLowerCase()),
   );
 
   return (

@@ -11,14 +11,26 @@ export default function MainContent({
 }: {
   characters: ICharacter[];
 }) {
-  const [searchValue, setSearchValue] = useState<string>('');
+  const [nameValue, setNameValue] = useState<string>('');
+  const [titleValue, setTitleValue] = useState<string>('');
+  const [searchValue, setSearchValue] = useState<string>('title');
 
   return (
     <>
-      <section className="mt-14 block items-center justify-around sm:mt-16 sm:flex sm:flex-row md:mt-20 lg:mt-28 xl:mt-36 2xl:mt-48">
-        <Search searchValue={searchValue} setSearchValue={setSearchValue} />
-      </section>
-      <CharactersGrid characters={characters} searchValue={searchValue} />
+      <Search
+        searchValue={searchValue}
+        nameValue={nameValue}
+        titleValue={titleValue}
+        setSearchValue={setSearchValue}
+        setNameValue={setNameValue}
+        setTitleValue={setTitleValue}
+      />
+      <CharactersGrid
+        characters={characters}
+        nameValue={nameValue}
+        titleValue={titleValue}
+        searchValue={searchValue}
+      />
     </>
   );
 }
