@@ -38,8 +38,8 @@ export default function Search({
       <button
         className={
           searchValue === 'name'
-            ? ' bg-orange-600 px-1 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white sm:px-1.5 md:px-2 md:text-base lg:px-3 lg:text-lg xl:text-xl 2xl:text-2xl'
-            : ' bg-zinc-700 px-1 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white sm:px-1.5 md:px-2 md:text-base lg:px-3 lg:text-lg xl:text-xl 2xl:text-2xl'
+            ? ' bg-orange-600 px-1.5 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white md:px-2 md:text-base lg:px-3 lg:text-lg xl:text-xl 2xl:text-2xl'
+            : ' bg-zinc-700 px-1.5 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white md:px-2 md:text-base lg:px-3 lg:text-lg xl:text-xl 2xl:text-2xl'
         }
         onClick={() => setSearchValue('name')}
         type="button"
@@ -50,8 +50,8 @@ export default function Search({
       <button
         className={
           searchValue === 'title'
-            ? ' rounded-r-md bg-orange-600 px-1.5 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white sm:px-2 md:px-3 md:text-base lg:px-4 lg:text-lg xl:text-xl 2xl:text-2xl'
-            : ' rounded-r-md bg-zinc-700 px-1.5 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white sm:px-2 md:px-3 md:text-base lg:px-4 lg:text-lg xl:text-xl 2xl:text-2xl'
+            ? ' rounded-r-md bg-orange-600 px-2 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white md:px-3 md:text-base lg:px-4 lg:text-lg xl:text-xl 2xl:text-2xl'
+            : ' rounded-r-md bg-zinc-700 px-2 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white md:px-3 md:text-base lg:px-4 lg:text-lg xl:text-xl 2xl:text-2xl'
         }
         onClick={() => setSearchValue('title')}
         type="button"
