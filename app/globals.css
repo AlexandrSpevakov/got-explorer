@@ -6,6 +6,10 @@
   grid-template-columns: repeat(4, 320px);
 }
 
+.quotes-grid {
+  grid-template-columns: 11% 78% 11%;
+}
+
 @media screen and (max-width: 1536px) {
   .characters-grid {
     grid-template-columns: repeat(4, 265px);

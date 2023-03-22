@@ -1,3 +1,5 @@
+import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
+
 interface QuotesProps {
   fullName: string;
 }
@@ -20,25 +22,21 @@ export default async function Quotes({ fullName }: QuotesProps) {
   }
 
   return (
-    <section className="mx-auto mt-10 w-11/12 xs:mt-12 sm:mt-14 md:mt-16 lg:mt-20 lg:w-10/12 xl:mt-24 2xl:mt-28">
+    <section className="mx-auto mt-10 xs:mt-12 sm:mt-14 md:mt-16 lg:mt-20 xl:mt-24 2xl:mt-28">
       <h3 className="mb-2 text-center text-[2.6rem] xs:text-5xl sm:mb-3 md:mb-2 lg:mb-3 lg:text-6xl xl:mb-4 xl:text-7xl 2xl:mb-5 2xl:text-8xl">
         Quotes
       </h3>
-      {quotes.map((r, i) => (
-        <span key={i}>{r}</span>
-      ))}
-      {/* {description.map((par, i) => (
-        <p
-          key={i}
-          className={
-            i !== 0
-              ? 'mb-3 text-base md:text-lg lg:mb-4 lg:text-xl xl:mb-6 xl:text-2xl 2xl:mb-8 2xl:text-3xl'
-              : 'mb-3 text-base first-letter:font-cardo first-letter:text-2xl first-letter:leading-3 sm:first-letter:text-3xl md:text-lg md:first-letter:text-4xl lg:mb-4 lg:text-xl lg:first-letter:text-5xl xl:mb-6 xl:text-2xl xl:first-letter:text-6xl 2xl:mb-8 2xl:text-3xl 2xl:first-letter:text-7xl'
-          }
-        >
-          {par}
-        </p>
-      ))} */}
+      <div className="grid grid-cols-2 gap-x-44">
+        {quotes.map((quote, i) => (
+          <div key={i} className="quotes-grid my-14 grid">
+            <RiDoubleQuotesL className="block w-20 self-start justify-self-end text-5xl" />
+            <span className="block text-[2.6rem] xs:text-5xl lg:text-6xl xl:text-4xl 2xl:text-6xl">
+              {quote}
+            </span>
+            <RiDoubleQuotesR className="block w-20 self-end text-5xl" />
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
