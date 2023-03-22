@@ -8,7 +8,7 @@ export const charactersNames: any = {
   Brandon_Stark: 5,
   Ned_Stark: 6,
   // Robert_Baratheon: 7, //dublicated
-  Jamie_Lannister: 8,
+  Jaime_Lannister: 8,
   Cersei_Lannister: 9,
   Catelyn_Stark: 10,
   Rob_Stark: 11,

@@ -14,7 +14,17 @@ export default function CharactersGrid({
   titleValue,
   searchValue,
 }: CharactersGridProps) {
-  const filteredCharacters = characters.filter((character: ICharacter) =>
+  const fixedCharacters: ICharacter[] = characters.map(
+    (character: ICharacter) => {
+      if (character.fullName === 'Jamie Lannister') {
+        character.fullName = 'Jaime Lannister';
+        return character;
+      }
+      return character;
+    },
+  );
+
+  const filteredCharacters = fixedCharacters.filter((character: ICharacter) =>
     searchValue === 'name'
       ? character.fullName
           .toLowerCase()

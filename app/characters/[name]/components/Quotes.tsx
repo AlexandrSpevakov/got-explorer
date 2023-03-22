@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 interface QuotesProps {
   fullName: string;
 }
@@ -10,14 +8,16 @@ async function getQuotes(fullName: string) {
     `https://api.gameofthronesquotes.xyz/v1/character/${slug}`,
   ).then((res) => res.json());
 
-  const character: any = data[0];
-
-  const quotes: string[] = [...character.quotes];
+  const quotes: string[] | null = data[0] ? [...data[0].quotes] : null;
   return quotes;
 }
 
 export default async function Quotes({ fullName }: QuotesProps) {
-  const quotes: string[] = await getQuotes(fullName);
+  const quotes: string[] | null = await getQuotes(fullName);
+
+  if (quotes === null) {
+    return null;
+  }
 
   return (
     <section className="mx-auto mt-10 w-11/12 xs:mt-12 sm:mt-14 md:mt-16 lg:mt-20 lg:w-10/12 xl:mt-24 2xl:mt-28">
@@ -39,12 +39,6 @@ export default async function Quotes({ fullName }: QuotesProps) {
           {par}
         </p>
       ))} */}
-      <Link
-        href="/houses"
-        className="mx-auto mb-8 mt-12 block w-fit rounded-md bg-zinc-700 py-1.5 px-4 text-xl outline-none outline-3 duration-300 hover:bg-orange-600 focus:outline-offset-0 focus:outline-orange-600 sm:mt-10 md:mb-10 md:py-3 md:px-6 md:text-2xl lg:mt-16 lg:mb-14 xl:mt-24 xl:mb-16 xl:py-4 xl:px-8 xl:text-3xl 2xl:mt-32 2xl:mb-20 2xl:py-5 2xl:px-10 2xl:text-4xl"
-      >
-        Back to Houses
-      </Link>
     </section>
   );
 }
