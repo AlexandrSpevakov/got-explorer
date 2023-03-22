@@ -39,6 +39,14 @@
 }
 
 @media screen and (max-width: 576px) {
+  #characters-top {
+    height: calc(100vh - theme(spacing.48));
+  }
+
+  .quotes-grid {
+    grid-template-columns: 5% 90% 5%;
+  }
+
   .characters-grid {
     grid-template-columns: repeat(1, 220px);
   }

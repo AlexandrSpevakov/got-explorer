@@ -26,14 +26,17 @@ export default async function Quotes({ fullName }: QuotesProps) {
       <h3 className="mb-2 text-center text-[2.6rem] xs:text-5xl sm:mb-3 md:mb-2 lg:mb-3 lg:text-6xl xl:mb-4 xl:text-7xl 2xl:mb-5 2xl:text-8xl">
         Quotes
       </h3>
-      <div className="grid grid-cols-2 gap-x-44">
+      <div className="grid xs:px-10 md:grid-cols-2 md:gap-x-20 md:px-0 lg:gap-x-24 xl:gap-x-28">
         {quotes.map((quote, i) => (
-          <div key={i} className="quotes-grid my-14 grid">
-            <RiDoubleQuotesL className="block w-20 self-start justify-self-end text-5xl" />
-            <span className="block text-[2.6rem] xs:text-5xl lg:text-6xl xl:text-4xl 2xl:text-6xl">
+          <div
+            key={i}
+            className="quotes-grid my-8 grid sm:my-10 md:my-12 lg:my-14"
+          >
+            <RiDoubleQuotesL className="block w-auto self-start justify-self-end text-xl xs:w-14 sm:text-2xl md:w-20 lg:text-4xl xl:text-5xl 2xl:text-6xl" />
+            <span className="block px-1.5 text-lg xs:px-0 sm:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
               {quote}
             </span>
-            <RiDoubleQuotesR className="block w-20 self-end text-5xl" />
+            <RiDoubleQuotesR className="block w-auto self-end text-xl xs:w-14 sm:text-2xl md:w-20 lg:text-4xl xl:text-5xl 2xl:text-6xl" />
           </div>
         ))}
       </div>
