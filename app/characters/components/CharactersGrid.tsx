@@ -14,10 +14,12 @@ export default function CharactersGrid({
   titleValue,
   searchValue,
 }: CharactersGridProps) {
-  const filteredCharacters = characters.filter((house: ICharacter) =>
+  const filteredCharacters = characters.filter((character: ICharacter) =>
     searchValue === 'name'
-      ? house.fullName.toLowerCase().includes(nameValue.trim().toLowerCase())
-      : house.title.toLowerCase().includes(titleValue.trim().toLowerCase()),
+      ? character.fullName
+          .toLowerCase()
+          .includes(nameValue.trim().toLowerCase())
+      : character.title.toLowerCase().includes(titleValue.trim().toLowerCase()),
   );
 
   return (
