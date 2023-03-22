@@ -16,7 +16,6 @@ export async function generateStaticParams() {
       character.fullName !== 'Jamie Lannister'
         ? character.fullName.split(' ').join('_')
         : 'Jaime_Lannister',
-    // name: character.fullName.split(' ').join('_'),
   }));
 }
 

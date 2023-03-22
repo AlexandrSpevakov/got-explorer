@@ -1,17 +1,23 @@
 import { Metadata } from 'next';
 
-import { housesNames } from '@/app/houses/[name]/data/housesNames';
+import { housesNames } from './data/housesNames';
 import { housesBgs } from './data/housesBgs';
 import { IHouse } from '@/app/types/IHouse';
 import TopSection from './components/TopSection';
 import Card from './components/Card';
 import Description from './components/Description';
 
+interface HouseParams {
+  params: {
+    name: string;
+  };
+}
+
 export async function generateStaticParams() {
   const data = await fetch(
     'https://6344adb1dcae733e8fe3067a.mockapi.io/houses',
   );
-  const houses = await data.json();
+  const houses: IHouse[] = await data.json();
 
   return houses.map((house: IHouse) => ({
     name: house.name,
@@ -28,10 +34,9 @@ async function getHouse(id: number) {
 
 export async function generateMetadata({
   params,
-}: {
-  params: { name: string };
-}): Promise<Metadata> {
+}: HouseParams): Promise<Metadata> {
   const house: IHouse = await getHouse(housesNames[params.name]);
+
   return {
     title: `GOT | ${house.name}`,
     description: `Description of the House ${house.name} in of Game of Thrones`,
@@ -47,7 +52,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function House({ params }: { params: { name: string } }) {
+export default async function House({ params }: HouseParams) {
   const house: IHouse = await getHouse(housesNames[params.name]);
 
   return (
