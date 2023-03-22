@@ -24,7 +24,7 @@ export default function Search({
   };
 
   return (
-    <section className="mx-auto mt-14 flex sm:mt-16 sm:w-3/6 md:mt-20 lg:mt-28 xl:mt-36 2xl:mt-48">
+    <section className="mx-auto mt-14 flex w-5/6 sm:mt-16 sm:w-4/6 md:mt-20 md:w-3/6 lg:mt-28 xl:mt-36 2xl:mt-48">
       <input
         type="text"
         value={searchValue === 'name' ? nameValue : titleValue}
@@ -32,14 +32,14 @@ export default function Search({
         placeholder={
           searchValue === 'name' ? 'Search by name...' : 'Search by title...'
         }
-        className="mb-4 w-full rounded-l-md bg-black py-1.5 px-4 text-lg focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white sm:mb-0 lg:py-2 lg:px-5 lg:text-xl xl:py-3 xl:px-6 xl:text-2xl 2xl:py-4 2xl:px-7 2xl:text-3xl"
+        className="w-full rounded-l-md bg-black py-1.5 px-4 text-lg focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white lg:py-2 lg:px-5 lg:text-xl xl:py-3 xl:px-6 xl:text-2xl 2xl:py-4 2xl:px-7 2xl:text-3xl"
       />
 
       <button
         className={
           searchValue === 'name'
-            ? 'w-2/12 bg-orange-600 px-3 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'
-            : 'w-2/12 bg-zinc-700 px-3 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'
+            ? ' bg-orange-600 px-1 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white sm:px-1.5 md:px-2 md:text-base lg:px-3 lg:text-lg xl:text-xl 2xl:text-2xl'
+            : ' bg-zinc-700 px-1 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white sm:px-1.5 md:px-2 md:text-base lg:px-3 lg:text-lg xl:text-xl 2xl:text-2xl'
         }
         onClick={() => setSearchValue('name')}
         type="button"
@@ -50,8 +50,8 @@ export default function Search({
       <button
         className={
           searchValue === 'title'
-            ? 'w-2/12 rounded-r-md bg-orange-600 px-3 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'
-            : 'w-2/12 rounded-r-md bg-zinc-700 px-3 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'
+            ? ' rounded-r-md bg-orange-600 px-1.5 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white sm:px-2 md:px-3 md:text-base lg:px-4 lg:text-lg xl:text-xl 2xl:text-2xl'
+            : ' rounded-r-md bg-zinc-700 px-1.5 text-base focus-visible:outline-none focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-white sm:px-2 md:px-3 md:text-base lg:px-4 lg:text-lg xl:text-xl 2xl:text-2xl'
         }
         onClick={() => setSearchValue('title')}
         type="button"

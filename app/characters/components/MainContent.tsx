@@ -13,7 +13,7 @@ export default function MainContent({
 }) {
   const [nameValue, setNameValue] = useState<string>('');
   const [titleValue, setTitleValue] = useState<string>('');
-  const [searchValue, setSearchValue] = useState<string>('title');
+  const [searchValue, setSearchValue] = useState<string>('name');
 
   return (
     <>
