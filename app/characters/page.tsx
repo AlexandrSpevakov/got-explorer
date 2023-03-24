@@ -20,7 +20,7 @@ async function getCharacters() {
 }
 
 export default async function Characters() {
-  const characters = await getCharacters();
+  const characters: ICharacter[] = await getCharacters();
 
   return (
     <main>
