@@ -24,12 +24,15 @@ export default function CharactersGrid({
     },
   );
 
-  const filteredCharacters = fixedCharacters.filter((character: ICharacter) =>
-    searchValue === 'name'
-      ? character.fullName
-          .toLowerCase()
-          .includes(nameValue.trim().toLowerCase())
-      : character.title.toLowerCase().includes(titleValue.trim().toLowerCase()),
+  const filteredCharacters: ICharacter[] = fixedCharacters.filter(
+    (character: ICharacter) =>
+      searchValue === 'name'
+        ? character.fullName
+            .toLowerCase()
+            .includes(nameValue.trim().toLowerCase())
+        : character.title
+            .toLowerCase()
+            .includes(titleValue.trim().toLowerCase()),
   );
 
   return (

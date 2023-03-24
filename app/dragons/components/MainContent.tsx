@@ -2,15 +2,11 @@
 
 import { useState } from 'react';
 
-import CharactersGrid from './CharactersGrid';
+import DragonsGrid from './DragonsGrid';
 import Search from './Search';
-import { ICharacter } from '@/app/types/ICharacter';
+import { IDragon } from '@/app/types/IDragon';
 
-export default function MainContent({
-  characters,
-}: {
-  characters: ICharacter[];
-}) {
+export default function MainContent({ dragons }: { dragons: IDragon[] }) {
   const [nameValue, setNameValue] = useState<string>('');
   const [titleValue, setTitleValue] = useState<string>('');
   const [searchValue, setSearchValue] = useState<string>('name');
@@ -25,8 +21,8 @@ export default function MainContent({
         setNameValue={setNameValue}
         setTitleValue={setTitleValue}
       />
-      <CharactersGrid
-        characters={characters}
+      <DragonsGrid
+        dragons={dragons}
         nameValue={nameValue}
         titleValue={titleValue}
         searchValue={searchValue}
