@@ -21,7 +21,7 @@ export default function DragonCard({ dragon }: DragonCardProps) {
       <Image
         src={dragonsImages[+dragon.id - 1]}
         alt={dragon.name}
-        className={`h-[400px] w-full rounded-t duration-300 ${opacity}`}
+        className={`h-[170px] w-full rounded-t duration-300 xs:h-[220px] sm:h-[300px] md:h-[370px] lg:h-[350px] xl:h-[400px] 2xl:h-[530px] ${opacity}`}
       />
 
       <Link
@@ -29,7 +29,7 @@ export default function DragonCard({ dragon }: DragonCardProps) {
         className="block rounded-b border-4 border-black outline-none focus:border-orange-600"
       >
         <h3
-          className="block cursor-pointer py-8 text-center text-lg duration-300 hover:text-orange-600 sm:text-base md:text-lg lg:text-3xl xl:text-5xl 2xl:text-5xl"
+          className="block cursor-pointer py-2  text-center text-xl duration-300 hover:text-orange-600 sm:py-4 sm:text-2xl md:py-6 md:text-3xl lg:text-4xl xl:py-8 xl:text-5xl"
           onMouseOver={() => setOpacity('opacity-40')}
           onMouseLeave={() => setOpacity('opacity-100')}
         >
