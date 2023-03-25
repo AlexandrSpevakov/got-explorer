@@ -19,7 +19,7 @@ export async function generateStaticParams() {
   const dragons: IDragon[] = await data.json();
 
   return dragons.map((dragon: IDragon) => ({
-    name: dragon.name,
+    name: dragon.name.split(' ').join(''),
   }));
 }
 
