@@ -12,6 +12,14 @@ import morghul from '../../../public/dragons/morghul.webp';
 import morning from '../../../public/dragons/morning.webp';
 import quicksilver from '../../../public/dragons/quicksilver.webp';
 import rhaegal from '../../../public/dragons/rhaegal.webp';
+import seasmoke from '../../../public/dragons/seasmoke.webp';
+import sheepstealer from '../../../public/dragons/sheepstealer.webp';
+import shrykos from '../../../public/dragons/shrykos.jpeg';
+import silverwing from '../../../public/dragons/silverwing.webp';
+import stormcloud from '../../../public/dragons/stormcloud.jpeg';
+import sunfyre from '../../../public/dragons/sunfyre.webp';
+import syrax from '../../../public/dragons/syrax.webp';
+import terrax from '../../../public/dragons/terrax.webp';
 
 export const dragonsImages = [
   arrax,
@@ -28,4 +36,12 @@ export const dragonsImages = [
   morning,
   quicksilver,
   rhaegal,
+  seasmoke,
+  sheepstealer,
+  shrykos,
+  silverwing,
+  stormcloud,
+  sunfyre,
+  syrax,
+  terrax,
 ];
