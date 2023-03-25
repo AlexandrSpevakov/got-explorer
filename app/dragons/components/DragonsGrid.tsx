@@ -3,30 +3,23 @@ import DragonCard from './DragonCard';
 
 interface DragonsGridProps {
   dragons: IDragon[];
-  nameValue: string;
-  titleValue: string;
   searchValue: string;
 }
 
 export default function DragonsGrid({
   dragons,
-  nameValue,
-  titleValue,
   searchValue,
 }: DragonsGridProps) {
   const filteredDragons: IDragon[] = dragons.filter((dragon: IDragon) =>
-    searchValue === 'name'
-      ? dragon.name.toLowerCase().includes(nameValue.trim().toLowerCase())
-      : dragon.name.toLowerCase().includes(nameValue.trim().toLowerCase()),
+    dragon.name.toLowerCase().includes(searchValue.trim().toLowerCase()),
   );
 
   return (
     <section
       className={
-        (nameValue.length >= 1 || titleValue.length >= 1) &&
-        filteredDragons.length < 1
+        searchValue.length >= 1 && filteredDragons.length < 1
           ? 'mx-auto mt-16 2xl:mt-24'
-          : 'characters-grid mx-auto mt-10 grid justify-center gap-y-6 sm:mt-10 sm:gap-8 sm:px-0 md:gap-10 lg:mt-12 lg:gap-x-6 lg:gap-y-12 xl:mt-16 xl:gap-x-8 xl:gap-y-14 2xl:mt-24 2xl:gap-y-16 2xl:gap-x-10'
+          : 'mx-auto mt-10 grid justify-center gap-y-6 sm:mt-12 sm:gap-8 sm:px-0 md:grid-cols-2 md:gap-10 lg:mt-16 lg:gap-x-6 lg:gap-y-12 xl:mt-20 xl:gap-x-8 xl:gap-y-14 2xl:mt-24 2xl:gap-y-16 2xl:gap-x-10'
       }
     >
       {filteredDragons.length >= 1 ? (

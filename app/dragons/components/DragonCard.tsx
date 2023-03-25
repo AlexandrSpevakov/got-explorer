@@ -1,5 +1,12 @@
+'use client';
+
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
+
+import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
+import { dragonsImages } from '../data/dragonsImages';
 import { IDragon } from '@/app/types/IDragon';
 
 interface DragonCardProps {
@@ -7,31 +14,24 @@ interface DragonCardProps {
 }
 
 export default function DragonCard({ dragon }: DragonCardProps) {
+  const [opacity, setOpacity] = useState<string>('opacity-100');
+
   return (
-    <div className="rounded-sm bg-black">
-      <div
-        className="mx-auto mb-6 h-64 w-full rounded-t-sm bg-cover bg-center bg-no-repeat sm:h-56 md:h-64 lg:h-72 xl:h-80 2xl:h-96"
-        // style={{
-        //   backgroundImage: `url(${character.imageUrl})`,
-        // }}
+    <div className="rounded bg-black">
+      <Image
+        src={dragonsImages[+dragon.id - 1]}
+        alt={dragon.name}
+        className={`h-[400px] rounded-t duration-300 ${opacity}`}
       />
 
-      <h3 className="block pb-3 text-center text-lg sm:text-base md:text-lg lg:text-xl xl:pb-4 xl:text-2xl 2xl:pb-5 2xl:text-3xl">
-        {dragon.name}
-      </h3>
-
-      <div className="flex h-[70px] border-t-[3px] border-stone-600 p-3 sm:text-sm md:h-20 md:border-t-4 lg:text-base xl:h-24 xl:py-4 xl:text-xl 2xl:h-28 2xl:py-5 2xl:text-2xl">
-        <span className="mr-1.5 text-stone-400 md:mr-2 lg:mr-3 xl:mr-3">
-          Title:
-        </span>
-        <span className="">{dragon.title}</span>
-      </div>
-
-      <Link
-        href={`/dragons/${dragon.name}`}
-        className="mx-auto my-6 block w-fit rounded-md bg-zinc-700 py-2 px-4 outline-none outline-3 duration-300 hover:bg-orange-600 focus:outline-offset-0 focus:outline-orange-600 sm:text-sm md:my-7 lg:text-lg xl:mt-10 xl:text-xl 2xl:text-2xl"
-      >
-        View More
+      <Link href={`/dragons/${dragon.name}`}>
+        <h3
+          className="block cursor-pointer py-8 text-center text-lg duration-300 hover:text-orange-600 focus:ring-offset-orange-600 sm:text-base md:text-lg lg:text-3xl xl:text-5xl 2xl:text-5xl"
+          onMouseOver={() => setOpacity('opacity-40')}
+          onMouseLeave={() => setOpacity('opacity-100')}
+        >
+          {dragon.name}
+        </h3>
       </Link>
     </div>
   );

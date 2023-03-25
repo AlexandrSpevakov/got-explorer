@@ -7,26 +7,12 @@ import Search from './Search';
 import { IDragon } from '@/app/types/IDragon';
 
 export default function MainContent({ dragons }: { dragons: IDragon[] }) {
-  const [nameValue, setNameValue] = useState<string>('');
-  const [titleValue, setTitleValue] = useState<string>('');
-  const [searchValue, setSearchValue] = useState<string>('name');
+  const [searchValue, setSearchValue] = useState<string>('');
 
   return (
     <>
-      <Search
-        searchValue={searchValue}
-        nameValue={nameValue}
-        titleValue={titleValue}
-        setSearchValue={setSearchValue}
-        setNameValue={setNameValue}
-        setTitleValue={setTitleValue}
-      />
-      <DragonsGrid
-        dragons={dragons}
-        nameValue={nameValue}
-        titleValue={titleValue}
-        searchValue={searchValue}
-      />
+      <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+      <DragonsGrid dragons={dragons} searchValue={searchValue} />
     </>
   );
 }
