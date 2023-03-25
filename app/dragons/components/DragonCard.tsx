@@ -21,7 +21,7 @@ export default function DragonCard({ dragon }: DragonCardProps) {
       <Image
         src={dragonsImages[+dragon.id - 1]}
         alt={dragon.name}
-        className={`h-[400px] rounded-t duration-300 ${opacity}`}
+        className={`h-[400px] w-full rounded-t duration-300 ${opacity}`}
       />
 
       <Link href={`/dragons/${dragon.name}`}>
