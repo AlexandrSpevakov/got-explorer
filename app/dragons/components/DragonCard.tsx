@@ -25,7 +25,7 @@ export default function DragonCard({ dragon }: DragonCardProps) {
       />
 
       <Link
-        href={`/dragons/${dragon.name}`}
+        href={`/dragons/${dragon.name.split(' ').join('')}`}
         className="block rounded-b border-4 border-black outline-none focus:border-orange-600"
       >
         <h3

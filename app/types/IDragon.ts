@@ -1,5 +1,5 @@
 export interface IDragon {
-  id: number;
+  id: string;
   name: string;
   title?: string;
   riders?: string[];
