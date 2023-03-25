@@ -77,7 +77,7 @@ export default async function Dragon({ params }: DragonParams) {
       {dragon.riders ? (
         <div className="mt-4 flex items-center justify-center gap-x-3 sm:mt-6 md:mt-8 lg:mt-10 xl:mt-12 xl:gap-x-4 2xl:mt-14 2xl:gap-x-5">
           <span className="text-base text-orange-600 xs:text-lg sm:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl">
-            Riders:
+            {dragon.riders.length > 1 ? 'Riders:' : 'Rider:'}
           </span>
           <div>
             {dragon.riders.map((rider, i) => (
