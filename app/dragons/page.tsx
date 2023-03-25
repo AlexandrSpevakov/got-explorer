@@ -15,7 +15,7 @@ export const metadata = {
 
 async function getDragons() {
   const data = await fetch(
-    'https://641bfd411f5d999a446e679b.mockapi.io/dragons',
+    'https://641ef7ddf228f1a83eadac82.mockapi.io/dragons',
   );
   const dragons: IDragon[] = await data.json();
   return dragons;

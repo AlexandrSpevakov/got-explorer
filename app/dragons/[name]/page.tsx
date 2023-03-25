@@ -14,7 +14,7 @@ interface DragonParams {
 
 export async function generateStaticParams() {
   const data = await fetch(
-    'https://641bfd411f5d999a446e679b.mockapi.io/dragons',
+    'https://641ef7ddf228f1a83eadac82.mockapi.io/dragons',
   );
   const dragons: IDragon[] = await data.json();
 
@@ -25,7 +25,7 @@ export async function generateStaticParams() {
 
 async function getDragon(id: number) {
   const data = await fetch(
-    `https://641bfd411f5d999a446e679b.mockapi.io/dragons/${id}`,
+    `https://641ef7ddf228f1a83eadac82.mockapi.io/dragons/${id}`,
   );
   const dragon: IDragon = await data.json();
   return dragon;
