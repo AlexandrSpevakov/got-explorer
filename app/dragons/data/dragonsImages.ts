@@ -19,14 +19,14 @@ import silverwing from '../../../public/dragons/silverwing.webp';
 import stormcloud from '../../../public/dragons/stormcloud.jpeg';
 import sunfyre from '../../../public/dragons/sunfyre.webp';
 import syrax from '../../../public/dragons/syrax.webp';
-// import terrax from '../../../public/dragons/terrax.webp';
-// import tessarion from '../../../public/dragons/tessarion.jpeg';
-// import tyraxes from '../../../public/dragons/tyraxes.webp';
-// import vermax from '../../../public/dragons/vermax.webp';
-// import vermithor from '../../../public/dragons/vermithor.webp';
-// import vhagar from '../../../public/dragons/vhagar.webp';
-// import viserion from '../../../public/dragons/viserion.jpeg';
-// import lastDragon from '../../../public/dragons/lastDragon.webp';
+import terrax from '../../../public/dragons/terrax.webp';
+import tessarion from '../../../public/dragons/tessarion.jpeg';
+import tyraxes from '../../../public/dragons/tyraxes.webp';
+import vermax from '../../../public/dragons/vermax.webp';
+import vermithor from '../../../public/dragons/vermithor.webp';
+import vhagar from '../../../public/dragons/vhagar.webp';
+import viserion from '../../../public/dragons/viserion.jpeg';
+import lastDragon from '../../../public/dragons/lastDragon.webp';
 
 export const dragonsImages = [
   arrax,
@@ -50,12 +50,12 @@ export const dragonsImages = [
   stormcloud,
   sunfyre,
   syrax,
-  // terrax,
-  // tessarion,
-  // tyraxes,
-  // vermax,
-  // vermithor,
-  // vhagar,
-  // viserion,
-  // lastDragon,
+  terrax,
+  tessarion,
+  tyraxes,
+  vermax,
+  vermithor,
+  vhagar,
+  viserion,
+  lastDragon,
 ];
