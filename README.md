@@ -10,4 +10,4 @@
 
 > ### Game of Thrones Wikipedia
 >
-> ### which based on G. Martin&apos;s fantasy
+> ### which based on G. Martin&apos;s fantasy novels.
