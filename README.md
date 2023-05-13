@@ -8,8 +8,6 @@
 
 ## Description
 
-> ### Wikipedia about the Game of Thrones TV series
+> ### Game of Thrones Wikipedia
 >
-> ### based on George Martin&apos;s fantasy novel
->
-> ### &quot;A Song of Ice and Fire&quot;.
+> ### which based on G. Martin&apos;s fantasy
