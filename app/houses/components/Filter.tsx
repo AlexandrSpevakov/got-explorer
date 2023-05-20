@@ -57,14 +57,12 @@ export default function Filter({ filterValue, setFilterValue }: FilterProps) {
     };
   }, [isOpen]);
 
-  const newLocal =
-    'relative z-10 flex w-fit cursor-pointer items-center text-xl focus:outline-offset-4 focus:outline-orange-600 sm:w-[auto] lg:text-2xl xl:text-3xl 2xl:text-4xl';
   return (
     <section ref={sortRef} className="relative pr-16">
       <div
         onClick={() => handleDivClick()}
         onKeyDown={(e) => handleDivKeyDown(e)}
-        className={newLocal}
+        className="relative z-10 flex w-fit cursor-pointer items-center text-xl focus:outline-offset-4 focus:outline-orange-600 sm:w-[auto] lg:text-2xl xl:text-3xl 2xl:text-4xl"
         role="button"
         tabIndex={0}
       >
